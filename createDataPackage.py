@@ -4,13 +4,12 @@ import os
 import requests
 import json
 
-def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_klv, buffer_size, timeout, rtsp_reliable):
+
+folder_structure = {}
+
+def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_klv, buffer_size, timeout, rtsp_reliable, region):
     # Create the root element
     root = ET.Element("feed")
-
-    # Create a folder with the name of the UUID
-    folder_name = uid
-    os.makedirs(folder_name, exist_ok=True)
 
     # Create child elements and set their text content
     elements = {
@@ -30,12 +29,35 @@ def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_
         element = ET.SubElement(root, element_name)
         element.text = str(element_value)
 
+    # Get the current working directory
+    root_directory = os.getcwd()
+   
+    # Create a folder with the name of the region
+    folder_name = region
+    
+    # Construct the path to the folder
+    folder_path = os.path.join(root_directory, folder_name)
+
+    # Check if the folder exists
+    if not os.path.exists(folder_path):
+        # If the folder doesn't exist, create it
+        os.makedirs(folder_path)
+
+    # Change the current working directory to the folder
+    os.chdir(folder_path)
+    print(f"Current working directory: {os.getcwd()}")
+
     # Create the XML tree
     tree = ET.ElementTree(root)
+    os.makedirs(uid, exist_ok=True)
 
-    filename = os.path.join(folder_name, f"{uid}.xml")
+    filename = os.path.join(uid, f"{uid}.xml")
     # Save the XML to a file
     tree.write(filename, xml_declaration=True, encoding='UTF-8')
+
+    # Return to the root directory
+    os.chdir(root_directory)
+
 
 def create_point_element(lat, lon, hae, ce, le):
     return ET.Element("point", lat=lat, lon=lon, hae=hae, ce=ce, le=le)
@@ -78,7 +100,7 @@ def create_remarks_element():
     return remarks
 
 def create_event_xml(event_info, point_info, sensor_info, link_info, contact_info, color_info,
-                     video_info, connection_entry_info, remarks_text):
+                     video_info, connection_entry_info, remarks_text, region):
     # Generate a UUID if not provided
     uid = event_info.get("uid", str(uuid.uuid4()))
 
@@ -128,13 +150,31 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
     detail.append(remarks)
 
     # Create a folder with the name of the UUID
-    folder_name = uid
-    os.makedirs(folder_name, exist_ok=True)
+    folder_name = region
+    
+    # Get the current working directory
+    root_directory = os.getcwd()
 
+    # Construct the path to the folder
+    folder_path = os.path.join(root_directory, folder_name)
+
+    # Check if the folder exists
+    if not os.path.exists(folder_path):
+        # If the folder doesn't exist, create it
+        os.makedirs(folder_path)
+
+    # Change the current working directory to the folder
+    os.chdir(folder_path)
+    print(f"Current working directory: {os.getcwd()}")
+    os.makedirs(uid, exist_ok=True)
     # Create the XML tree
     tree = ET.ElementTree(root)
-    filename = os.path.join(folder_name, f"{uid}.cot")
+    filename = os.path.join(uid, f"{uid}.cot")
     tree.write(filename, xml_declaration=True, encoding='UTF-8')
+
+    # Return to the root directory
+    os.chdir(root_directory)
+
 
 def generate_manifest_xml(uid, name, contents):
     # Create the root element
@@ -172,7 +212,20 @@ def get_regions():
     response = requests.get(url)
     return json.loads(response.text)
 
-get_regions()
+def count_decimal_places(number):
+    # Convert the float to a string
+    number_str = str(number)
+
+    # Check if the string contains a decimal point
+    if '.' in number_str:
+        # Get the substring after the decimal point and count its length
+        decimal_places = len(number_str.split('.')[1])
+        return decimal_places
+    else:
+        # If there is no decimal point, there are zero decimal places
+        return 0
+
+content = get_regions()
 contents_info = []
 # Specify the path to the KML file
 kml_file_path = "MarylandTrafficCameras.kml"
@@ -197,6 +250,7 @@ for placemark in placemark_elements:
         location_value = location_element.text
         sensorUid = str(uuid.uuid4())
         videoUid = str(uuid.uuid4())
+                
         event_info = {"version": "2.0", "uid": sensorUid , "type": "b-m-p-s-p-loc",
               "time": "2023-12-18T03:12:31.194Z", "start": "2023-12-18T03:12:31.194Z",
               "stale": "2024-12-17T03:12:31.194Z", "how": "h-g-i-g-o", "access": "Undefined"}
@@ -225,12 +279,20 @@ for placemark in placemark_elements:
                                 "alias": location_value}
 
         remarks_text = ""
-
-        create_xml("raw", location_value, videoUid, hlsurl_element.text, -1, -1, False, -1, 1200, 0)
+        
+        region = ""
+        for cam in content:
+            lat_number = count_decimal_places(float(cam['lat']))
+            lon_number = count_decimal_places(float(cam['lon']))
+            if round(float(lat_element.text),lat_number -1 ) == round(float(cam['lat']),lat_number -1) and round(float(lon_element.text),lon_number-1) == round(float(cam['lon']), lon_number -1):
+                region = cam['cameraCategories'][0]
+                break
+                
+        create_xml("raw", location_value, videoUid, hlsurl_element.text, -1, -1, False, -1, 1200, 0, region)
         sensor = {'uid': sensorUid, 'name': location_value, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
         video =  {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
         create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
-                 color_info, video_info, connection_entry_info, remarks_text)
+                 color_info, video_info, connection_entry_info, remarks_text, region)
         contents_info.append(video)
         contents_info.append(sensor)
 
