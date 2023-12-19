@@ -195,9 +195,9 @@ for placemark in placemark_elements:
     lon_element = placemark.find('.//kml:SimpleData[@name="Longitude"]', namespaces=namespace)
     if location_element is not None:
         location_value = location_element.text
-        uid = str(uuid.uuid4())
+        sensorUid = str(uuid.uuid4())
         videoUid = str(uuid.uuid4())
-        event_info = {"version": "2.0", "uid": videoUid , "type": "b-m-p-s-p-loc",
+        event_info = {"version": "2.0", "uid": sensorUid , "type": "b-m-p-s-p-loc",
               "time": "2023-12-18T03:12:31.194Z", "start": "2023-12-18T03:12:31.194Z",
               "stale": "2024-12-17T03:12:31.194Z", "how": "h-g-i-g-o", "access": "Undefined"}
 
@@ -215,20 +215,20 @@ for placemark in placemark_elements:
 
         color_info = {"argb": "-1"}
 
-        video_info = {"uid": uid,
+        video_info = {"uid": videoUid,
                     "url": hlsurl_element.text}
 
-        connection_entry_info = {"networkTimeout": "12000", "uid": uid,
+        connection_entry_info = {"networkTimeout": "12000", "uid": videoUid,
                                 "path": "", "protocol": "raw", "bufferTime": "-1",
                                 "address": hlsurl_element.text,
-                                "port": "-1", "roverPort": "-1", "rtspReliable": "0", "ignoreEmbeddedKLV": "false",
+                                "port": "80", "roverPort": "-1", "rtspReliable": "0", "ignoreEmbeddedKLV": "false",
                                 "alias": location_value}
 
         remarks_text = ""
 
-        create_xml("raw", location_value, uid, hlsurl_element.text, -1, -1, False, -1, 1200, 0)
-        video = {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.cot'}
-        sensor =  {'uid': uid, 'name': location_value, 'zipEntry': f'{uid}/{uid}.xml', 'contentType': 'Text'}
+        create_xml("raw", location_value, videoUid, hlsurl_element.text, -1, -1, False, -1, 1200, 0)
+        sensor = {'uid': sensorUid, 'name': location_value, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
+        video =  {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
         create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
                  color_info, video_info, connection_entry_info, remarks_text)
         contents_info.append(video)
