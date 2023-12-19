@@ -205,7 +205,6 @@ def generate_manifest_xml(uid, name, contents):
 
         # Create the 'Contents' element
         contents_element = ET.SubElement(root, "Contents")
-        print(len(uuid_list))
 
         # Create 'Content' elements within 'Contents'
         for content in contents:                
