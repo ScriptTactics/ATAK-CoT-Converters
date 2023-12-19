@@ -205,19 +205,18 @@ def generate_manifest_xml(uid, name, contents):
 
         # Create the 'Contents' element
         contents_element = ET.SubElement(root, "Contents")
+        print(len(uuid_list))
 
         # Create 'Content' elements within 'Contents'
-        for content in contents:
-            for uuid in uuid_list:
+        for content in contents:                
+            if content['uid'] in uuid_list:
                 content_element = ET.SubElement(contents_element, "Content", ignore="false", zipEntry=content['zipEntry'])
+                 # Create 'Parameter' elements within 'Content'
+                parameter_uid = ET.SubElement(content_element, "Parameter", name="uid", value=content['uid'])
+                parameter_name = ET.SubElement(content_element, "Parameter", name="name", value=content['name'])
                 
-                if content['uid'] == uuid:
-                    # Create 'Parameter' elements within 'Content'
-                    parameter_uid = ET.SubElement(content_element, "Parameter", name="uid", value=uuid)
-                    parameter_name = ET.SubElement(content_element, "Parameter", name="name", value=content['name'])
-                
-                    if 'contentType' in content:
-                        parameter_content_type = ET.SubElement(content_element, "Parameter", name="contentType", value=content['contentType'])
+                if 'contentType' in content:
+                    parameter_content_type = ET.SubElement(content_element, "Parameter", name="contentType", value=content['contentType'])
 
         # Create the XML tree
         tree = ET.ElementTree(root)
