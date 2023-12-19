@@ -35,6 +35,11 @@ def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_
     # Create a folder with the name of the region
     folder_name = region
     
+    if region in folder_structure:
+        folder_structure[region].append(uid)
+    else:    
+        folder_structure[region] = []
+    
     # Construct the path to the folder
     folder_path = os.path.join(root_directory, folder_name)
 
@@ -151,7 +156,10 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
 
     # Create a folder with the name of the UUID
     folder_name = region
-    
+    if region in folder_structure:
+        folder_structure[region].append(uid)
+    else:    
+        folder_structure[region] = []
     # Get the current working directory
     root_directory = os.getcwd()
 
@@ -177,35 +185,46 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
 
 
 def generate_manifest_xml(uid, name, contents):
-    # Create the root element
-    root = ET.Element("MissionPackageManifest", version="2")
+    for city, uuid_list in folder_structure.items():    
+        # Get the current working directory
+        root_directory = os.getcwd()
 
-    # Create the 'Configuration' element
-    configuration = ET.SubElement(root, "Configuration")
+        if city:
+            # Construct the path to the folder
+            folder_path = os.path.join(root_directory, str(city))
+            os.chdir(folder_path)
+        # Create the root element
+        root = ET.Element("MissionPackageManifest", version="2")
 
-    # Create 'Parameter' elements within 'Configuration'
-    parameter_uid = ET.SubElement(configuration, "Parameter", name="uid", value=uid)
-    parameter_name = ET.SubElement(configuration, "Parameter", name="name", value=name)
+        # Create the 'Configuration' element
+        configuration = ET.SubElement(root, "Configuration")
 
-    # Create the 'Contents' element
-    contents_element = ET.SubElement(root, "Contents")
+        # Create 'Parameter' elements within 'Configuration'
+        parameter_uid = ET.SubElement(configuration, "Parameter", name="uid", value=uid)
+        parameter_name = ET.SubElement(configuration, "Parameter", name="name", value=name)
 
-    # Create 'Content' elements within 'Contents'
-    for content in contents:
-        content_element = ET.SubElement(contents_element, "Content", ignore="false", zipEntry=content['zipEntry'])
-        
-        # Create 'Parameter' elements within 'Content'
-        parameter_uid = ET.SubElement(content_element, "Parameter", name="uid", value=content['uid'])
-        parameter_name = ET.SubElement(content_element, "Parameter", name="name", value=content['name'])
-        
-        if 'contentType' in content:
-            parameter_content_type = ET.SubElement(content_element, "Parameter", name="contentType", value=content['contentType'])
+        # Create the 'Contents' element
+        contents_element = ET.SubElement(root, "Contents")
 
-    # Create the XML tree
-    tree = ET.ElementTree(root)
+        # Create 'Content' elements within 'Contents'
+        for content in contents:
+            for uuid in uuid_list:
+                content_element = ET.SubElement(contents_element, "Content", ignore="false", zipEntry=content['zipEntry'])
+                
+                if content['uid'] == uuid:
+                    # Create 'Parameter' elements within 'Content'
+                    parameter_uid = ET.SubElement(content_element, "Parameter", name="uid", value=uuid)
+                    parameter_name = ET.SubElement(content_element, "Parameter", name="name", value=content['name'])
+                
+                    if 'contentType' in content:
+                        parameter_content_type = ET.SubElement(content_element, "Parameter", name="contentType", value=content['contentType'])
 
-    # Save the XML to a file
-    tree.write("manifest.xml", xml_declaration=True, encoding='UTF-8')
+        # Create the XML tree
+        tree = ET.ElementTree(root)
+
+        # Save the XML to a file
+        tree.write("manifest.xml", xml_declaration=True, encoding='UTF-8')
+        os.chdir(root_directory)
     
 def get_regions():
     url = 'https://chart.maryland.gov/DataFeeds/GetCamerasJson'
