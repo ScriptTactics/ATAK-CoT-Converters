@@ -43,6 +43,8 @@ def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_
         folder_structure[region].append(uid)
     else:    
         folder_structure[region] = []
+        folder_structure[region].append(uid)
+
     
     # Construct the path to the folder
     folder_path = os.path.join(root_directory, folder_name)
@@ -124,27 +126,17 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
     detail = ET.SubElement(root, "detail")
 
     # Create child elements within the 'detail' element
-    ET.SubElement(detail, "status", readiness=sensor_info.get("readiness", "true"))
     ET.SubElement(detail, "archive")
-    ET.SubElement(detail, "precisionlocation", altsrc=sensor_info.get("altsrc", ""))
-    
-    # Create the 'sensor' element
-    sensor = create_sensor_element(**sensor_info)
-    detail.append(sensor)
-    
-    ET.SubElement(detail, "archive")
-    
-    # Create the 'link' element
-    link = create_link_element(**link_info)
-    detail.append(link)
-    
     # Create the 'contact' element
     contact = create_contact_element(**contact_info)
     detail.append(contact)
-    
-    # Create the 'color' element
-    color = create_color_element(**color_info)
-    detail.append(color)
+    ET.SubElement(detail, "archive")
+    # Create the 'remarks' element
+    remarks = create_remarks_element()
+    detail.append(remarks)
+    # Create the 'link' element
+    link = create_link_element(**link_info)
+    detail.append(link)
 
     # Create the '__video' element
     video = create_video_element(**video_info)
@@ -154,9 +146,12 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
     video.append(connection_entry)
     detail.append(video)
 
-    # Create the 'remarks' element
-    remarks = create_remarks_element()
-    detail.append(remarks)
+    ET.SubElement(detail, "precisionlocation", altsrc=sensor_info.get("altsrc", ""))
+    
+    # Create the 'sensor' element
+    sensor = create_sensor_element(**sensor_info)
+    detail.append(sensor)
+
 
     folder_name= ""
     # Create a folder with the name of the region
@@ -169,6 +164,7 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
         folder_structure[region].append(uid)
     else:    
         folder_structure[region] = []
+        folder_structure[region].append(uid)
 
     # Get the current working directory
     root_directory = os.getcwd()
@@ -214,8 +210,8 @@ def generate_manifest_xml(uid, name, contents):
         configuration = ET.SubElement(root, "Configuration")
 
         # Create 'Parameter' elements within 'Configuration'
-        parameter_uid = ET.SubElement(configuration, "Parameter", name="uid", value=uid)
-        parameter_name = ET.SubElement(configuration, "Parameter", name="name", value=name)
+        ET.SubElement(configuration, "Parameter", name="uid", value=uid)
+        ET.SubElement(configuration, "Parameter", name="name", value=name)
 
         # Create the 'Contents' element
         contents_element = ET.SubElement(root, "Contents")
@@ -224,12 +220,14 @@ def generate_manifest_xml(uid, name, contents):
         for content in contents:                
             if content['uid'] in uuid_list:
                 content_element = ET.SubElement(contents_element, "Content", ignore="false", zipEntry=content['zipEntry'])
-                 # Create 'Parameter' elements within 'Content'
-                parameter_uid = ET.SubElement(content_element, "Parameter", name="uid", value=content['uid'])
-                parameter_name = ET.SubElement(content_element, "Parameter", name="name", value=content['name'])
-                
-                if 'contentType' in content:
-                    parameter_content_type = ET.SubElement(content_element, "Parameter", name="contentType", value=content['contentType'])
+                if '.cot' in content['zipEntry']:
+                    # Create 'Parameter' elements within 'Content'
+                    ET.SubElement(content_element, "Parameter", name="uid", value=content['uid'])
+                if '.xml' in content['zipEntry']:
+                    ET.SubElement(content_element, "Parameter", name="name", value=content['name'])
+                    
+                    # if 'contentType' in content:
+                    #     parameter_content_type = ET.SubElement(content_element, "Parameter", name="contentType", value=content['contentType'])
 
         # Create the XML tree
         tree = ET.ElementTree(root)
@@ -284,7 +282,7 @@ for placemark in placemark_elements:
                 
         event_info = {"version": "2.0", "uid": sensorUid , "type": "b-m-p-s-p-loc",
               "time": "2023-12-18T03:12:31.194Z", "start": "2023-12-18T03:12:31.194Z",
-              "stale": "2024-12-17T03:12:31.194Z", "how": "h-g-i-g-o", "access": "Undefined"}
+              "stale": "2024-12-17T03:12:31.194Z", "how": "h-g-i-g-o"}
 
         point_info = {"lat": lat_element.text, "lon": lon_element.text, "hae": "105.112", "ce": "9999999.0", "le": "9999999.0"}
 
@@ -319,12 +317,12 @@ for placemark in placemark_elements:
                 region = cam['cameraCategories'][0]
                 break
                 
-        create_xml("raw", location_value, videoUid, hlsurl_element.text, 80, -1, False, -1, 1200, 0, region)
+        create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
+                 color_info, video_info, connection_entry_info, remarks_text, region)        
+        create_xml("raw", location_value, videoUid, hlsurl_element.text, 80, -1, "false", -1, 1200, 0, region)
         sensor = {'uid': sensorUid, 'name': location_value, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
         video =  {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
-        create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
-                 color_info, video_info, connection_entry_info, remarks_text, region)
-        contents_info.append(video)
         contents_info.append(sensor)
+        contents_info.append(video)
 
 generate_manifest_xml(uid=str(uuid.uuid4()), name='DP-JULIET ROMEO', contents=contents_info)
