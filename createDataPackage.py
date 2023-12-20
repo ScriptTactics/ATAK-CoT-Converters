@@ -32,8 +32,12 @@ def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_
     # Get the current working directory
     root_directory = os.getcwd()
    
+    folder_name= ""
     # Create a folder with the name of the region
-    folder_name = region
+    if region:
+        folder_name = region
+    else:
+        folder_name = "ungrouped"
     
     if region in folder_structure:
         folder_structure[region].append(uid)
@@ -120,15 +124,15 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
     detail = ET.SubElement(root, "detail")
 
     # Create child elements within the 'detail' element
-    status = ET.SubElement(detail, "status", readiness=sensor_info.get("readiness", "true"))
-    archive1 = ET.SubElement(detail, "archive")
-    precision_location = ET.SubElement(detail, "precisionlocation", altsrc=sensor_info.get("altsrc", ""))
+    ET.SubElement(detail, "status", readiness=sensor_info.get("readiness", "true"))
+    ET.SubElement(detail, "archive")
+    ET.SubElement(detail, "precisionlocation", altsrc=sensor_info.get("altsrc", ""))
     
     # Create the 'sensor' element
     sensor = create_sensor_element(**sensor_info)
     detail.append(sensor)
     
-    archive2 = ET.SubElement(detail, "archive")
+    ET.SubElement(detail, "archive")
     
     # Create the 'link' element
     link = create_link_element(**link_info)
@@ -154,12 +158,18 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
     remarks = create_remarks_element()
     detail.append(remarks)
 
-    # Create a folder with the name of the UUID
-    folder_name = region
+    folder_name= ""
+    # Create a folder with the name of the region
+    if region:
+        folder_name = region
+    else:
+        folder_name = "ungrouped"
+
     if region in folder_structure:
         folder_structure[region].append(uid)
     else:    
         folder_structure[region] = []
+
     # Get the current working directory
     root_directory = os.getcwd()
 
@@ -193,6 +203,10 @@ def generate_manifest_xml(uid, name, contents):
             # Construct the path to the folder
             folder_path = os.path.join(root_directory, str(city))
             os.chdir(folder_path)
+        else:
+            folder_path = os.path.join(root_directory, "ungrouped")
+            os.chdir(folder_path)
+
         # Create the root element
         root = ET.Element("MissionPackageManifest", version="2")
 
@@ -305,7 +319,7 @@ for placemark in placemark_elements:
                 region = cam['cameraCategories'][0]
                 break
                 
-        create_xml("raw", location_value, videoUid, hlsurl_element.text, -1, -1, False, -1, 1200, 0, region)
+        create_xml("raw", location_value, videoUid, hlsurl_element.text, 80, -1, False, -1, 1200, 0, region)
         sensor = {'uid': sensorUid, 'name': location_value, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
         video =  {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
         create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
