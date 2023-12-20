@@ -190,7 +190,7 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
     os.chdir(root_directory)
 
 
-def generate_manifest_xml(uid, name, contents):
+def generate_manifest_xml(contents):
     for city, uuid_list in folder_structure.items():    
         # Get the current working directory
         root_directory = os.getcwd()
@@ -203,6 +203,8 @@ def generate_manifest_xml(uid, name, contents):
             folder_path = os.path.join(root_directory, "ungrouped")
             os.chdir(folder_path)
 
+        os.mkdir('MANIFEST')
+        os.chdir('MANIFEST')
         # Create the root element
         root = ET.Element("MissionPackageManifest", version="2")
 
@@ -210,8 +212,8 @@ def generate_manifest_xml(uid, name, contents):
         configuration = ET.SubElement(root, "Configuration")
 
         # Create 'Parameter' elements within 'Configuration'
-        ET.SubElement(configuration, "Parameter", name="uid", value=uid)
-        ET.SubElement(configuration, "Parameter", name="name", value=name)
+        ET.SubElement(configuration, "Parameter", name="uid", value=str(uuid.uuid4()))
+        ET.SubElement(configuration, "Parameter", name="name", value=f"{city}_traffic_cams")
 
         # Create the 'Contents' element
         contents_element = ET.SubElement(root, "Contents")
@@ -325,4 +327,4 @@ for placemark in placemark_elements:
         contents_info.append(sensor)
         contents_info.append(video)
 
-generate_manifest_xml(uid=str(uuid.uuid4()), name='DP-JULIET ROMEO', contents=contents_info)
+generate_manifest_xml(contents=contents_info)
