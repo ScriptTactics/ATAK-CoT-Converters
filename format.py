@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
 # Specify the path to the KML file
-kml_file_path = "MarylandTrafficCameras.kml"
+kml_file_path = "TrafficCameras/NY/NYCDOT_TrafficCameras.kml"
 
 # Read the content of the KML file
 with open(kml_file_path, "r") as file:
@@ -20,13 +20,16 @@ for placemark in placemark_elements:
     if location_element is not None:
         location_value = location_element.text
 
-        if placemark.find('.//kml:name[]')
-        # Create a new <name> element
-        name_element = ET.Element('name')
-        name_element.text = location_value
+        name_element = placemark.find('.//kml:name', namespaces=namespace)
+        if name_element.text:
+            name_element.text = location_value
+        else:
+            # Create a new <name> element
+            name_element = ET.Element('name')
+            name_element.text = location_value
+            placemark.insert(name_element)
 
         # Insert the <name> element after <Placemark> and before <ExtendedData>
-        placemark.insert(0, name_element)
         print(f"Added <name>{location_value}</name> in one of the Placemarks.")
     else:
         print("Location not found in one of the Placemarks.")
