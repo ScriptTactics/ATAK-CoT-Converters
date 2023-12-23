@@ -7,7 +7,50 @@ import json
 
 folder_structure = {}
 
-def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_klv, buffer_size, timeout, rtsp_reliable, region):
+def folder_setup(uid, root, extension):
+    # Get the current working directory
+    root_directory = os.getcwd()
+   
+    folder_name= ""
+    # Create a folder with the name of the region
+    if region:
+        folder_name = region
+    else:
+        folder_name = "ungrouped"
+    
+    if region in folder_structure:
+        folder_structure[region].append(uid)
+    else:    
+        folder_structure[region] = []
+        folder_structure[region].append(uid)
+
+    # Construct the path to the folder
+    folder_path = os.path.join(root_directory, folder_name)
+
+    # Check if the folder exists
+    if not os.path.exists(folder_path):
+        # If the folder doesn't exist, create it
+        os.makedirs(folder_path)
+
+    # Change the current working directory to the folder
+    os.chdir(folder_path)
+    print(f"Current working directory: {os.getcwd()}")
+
+    # Create the XML tree
+    tree = ET.ElementTree(root)
+    os.makedirs(uid, exist_ok=True)
+
+    filename = os.path.join(uid, f"{uid}.{extension}")
+    # Save the XML to a file
+    tree.write(filename, xml_declaration=True, encoding='UTF-8')
+
+    # Return to the root directory
+    os.chdir(root_directory)
+
+
+
+
+def create_point_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_klv, buffer_size, timeout, rtsp_reliable, region):
     # Create the root element
     root = ET.Element("feed")
 
@@ -29,45 +72,9 @@ def create_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_
         element = ET.SubElement(root, element_name)
         element.text = str(element_value)
 
-    # Get the current working directory
-    root_directory = os.getcwd()
-   
-    folder_name= ""
-    # Create a folder with the name of the region
-    if region:
-        folder_name = region
-    else:
-        folder_name = "ungrouped"
+
+    folder_setup(uid, root, "xml")
     
-    if region in folder_structure:
-        folder_structure[region].append(uid)
-    else:    
-        folder_structure[region] = []
-        folder_structure[region].append(uid)
-
-    
-    # Construct the path to the folder
-    folder_path = os.path.join(root_directory, folder_name)
-
-    # Check if the folder exists
-    if not os.path.exists(folder_path):
-        # If the folder doesn't exist, create it
-        os.makedirs(folder_path)
-
-    # Change the current working directory to the folder
-    os.chdir(folder_path)
-    print(f"Current working directory: {os.getcwd()}")
-
-    # Create the XML tree
-    tree = ET.ElementTree(root)
-    os.makedirs(uid, exist_ok=True)
-
-    filename = os.path.join(uid, f"{uid}.xml")
-    # Save the XML to a file
-    tree.write(filename, xml_declaration=True, encoding='UTF-8')
-
-    # Return to the root directory
-    os.chdir(root_directory)
 
 
 def create_point_element(lat, lon, hae, ce, le):
@@ -153,41 +160,7 @@ def create_event_xml(event_info, point_info, sensor_info, link_info, contact_inf
     detail.append(sensor)
 
 
-    folder_name= ""
-    # Create a folder with the name of the region
-    if region:
-        folder_name = region
-    else:
-        folder_name = "ungrouped"
-
-    if region in folder_structure:
-        folder_structure[region].append(uid)
-    else:    
-        folder_structure[region] = []
-        folder_structure[region].append(uid)
-
-    # Get the current working directory
-    root_directory = os.getcwd()
-
-    # Construct the path to the folder
-    folder_path = os.path.join(root_directory, folder_name)
-
-    # Check if the folder exists
-    if not os.path.exists(folder_path):
-        # If the folder doesn't exist, create it
-        os.makedirs(folder_path)
-
-    # Change the current working directory to the folder
-    os.chdir(folder_path)
-    print(f"Current working directory: {os.getcwd()}")
-    os.makedirs(uid, exist_ok=True)
-    # Create the XML tree
-    tree = ET.ElementTree(root)
-    filename = os.path.join(uid, f"{uid}.cot")
-    tree.write(filename, xml_declaration=True, encoding='UTF-8')
-
-    # Return to the root directory
-    os.chdir(root_directory)
+    folder_setup(uid, root, "cot")
 
 
 def generate_manifest_xml(contents):
@@ -200,6 +173,7 @@ def generate_manifest_xml(contents):
             folder_path = os.path.join(root_directory, str(city))
             os.chdir(folder_path)
         else:
+            city = "ungrouped"
             folder_path = os.path.join(root_directory, "ungrouped")
             os.chdir(folder_path)
 
@@ -238,9 +212,8 @@ def generate_manifest_xml(contents):
         tree.write("manifest.xml", xml_declaration=True, encoding='UTF-8')
         os.chdir(root_directory)
     
-def get_regions():
-    url = 'https://chart.maryland.gov/DataFeeds/GetCamerasJson'
-    response = requests.get(url)
+def get_regions(request_url):
+    response = requests.get(request_url)
     return json.loads(response.text)
 
 def count_decimal_places(number):
@@ -256,27 +229,28 @@ def count_decimal_places(number):
         # If there is no decimal point, there are zero decimal places
         return 0
 
-content = get_regions()
+content = get_regions("https://chart.maryland.gov/DataFeeds/GetCamerasJson")
 contents_info = []
 # Specify the path to the KML file
-kml_file_path = "MarylandTrafficCameras.kml"
+kml_file_path = "NY/NYCDOT_TrafficCameras.kml"
 
 # Read the content of the KML file
 with open(kml_file_path, "r") as file:
     xml_string = file.read()
 
 # Parse the XML string
-root = ET.fromstring(xml_string)
+sensor_root = ET.fromstring(xml_string)
 
 # Find all Placemark elements within the Folder
 namespace = {'kml': 'http://www.opengis.net/kml/2.2'}
-placemark_elements = root.findall('.//kml:Placemark', namespaces=namespace)
+placemark_elements = sensor_root.findall('.//kml:Placemark', namespaces=namespace)
 
+    
 for placemark in placemark_elements:
-    hlsurl_element = placemark.find('.//kml:SimpleData[@name="hlsurl"]', namespaces=namespace)
-    location_element = placemark.find('.//kml:SimpleData[@name="location"]', namespaces=namespace)
-    lat_element = placemark.find('.//kml:SimpleData[@name="Latitude"]', namespaces=namespace)
-    lon_element = placemark.find('.//kml:SimpleData[@name="Longitude"]', namespaces=namespace)
+    url_element = placemark.find('.//kml:SimpleData[@name="URLIMAGE"]', namespaces=namespace)
+    location_element = placemark.find('.//kml:SimpleData[@name="LOCATION"]', namespaces=namespace)
+    lat_element = placemark.find('.//kml:SimpleData[@name="LAT"]', namespaces=namespace)
+    lon_element = placemark.find('.//kml:SimpleData[@name="LON"]', namespaces=namespace)
     if location_element is not None:
         location_value = location_element.text
         sensorUid = str(uuid.uuid4())
@@ -294,18 +268,18 @@ for placemark in placemark_elements:
                     "strokeColor": "-16777216", "rangeLines": "100", "fovAlpha": "0.2980392156862745"}
 
         link_info = {"uid": "ANDROID-f18b0c86a8c70bcf", "production_time": "2023-12-18T03:08:49.272Z",
-                    "link_type": "a-f-G-U-C", "parent_callsign": "JULIET ROMEO", "relation": "p-p"}
+                    "link_type": "a-f-G-U-C", "parent_callsign": "ALPHA", "relation": "p-p"}
 
         contact_info = {"callsign": location_value}
 
         color_info = {"argb": "-1"}
 
         video_info = {"uid": videoUid,
-                    "url": hlsurl_element.text}
+                    "url": url_element.text}
 
         connection_entry_info = {"networkTimeout": "12000", "uid": videoUid,
                                 "path": "", "protocol": "raw", "bufferTime": "-1",
-                                "address": hlsurl_element.text,
+                                "address": url_element.text,
                                 "port": "80", "roverPort": "-1", "rtspReliable": "0", "ignoreEmbeddedKLV": "false",
                                 "alias": location_value}
 
@@ -321,7 +295,7 @@ for placemark in placemark_elements:
                 
         create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
                  color_info, video_info, connection_entry_info, remarks_text, region)        
-        create_xml("raw", location_value, videoUid, hlsurl_element.text, 80, -1, "false", -1, 1200, 0, region)
+        create_point_xml("raw", location_value, videoUid, url_element.text, 80, -1, "false", -1, 1200, 0, region)
         sensor = {'uid': sensorUid, 'name': location_value, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
         video =  {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
         contents_info.append(sensor)

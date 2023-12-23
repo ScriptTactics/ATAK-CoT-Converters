@@ -1,0 +1,2913 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="NYCDOT_TrafficCameras" id="NYCDOT_TrafficCameras">
+	<SimpleField name="Name" type="string"></SimpleField>
+	<SimpleField name="Description" type="string"></SimpleField>
+	<SimpleField name="ID" type="float"></SimpleField>
+	<SimpleField name="LAT" type="float"></SimpleField>
+	<SimpleField name="LON" type="float"></SimpleField>
+	<SimpleField name="ACTIVE" type="string"></SimpleField>
+	<SimpleField name="LOCATION" type="string"></SimpleField>
+	<SimpleField name="LIVEID" type="float"></SimpleField>
+	<SimpleField name="URLIMAGE" type="string"></SimpleField>
+	<SimpleField name="URLANIM" type="string"></SimpleField>
+</Schema>
+<Folder><name>NYCDOT_TrafficCameras</name>
+  <Placemark>
+	<name>1</name>
+	<description>1</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">0.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77301200000</SimpleData>
+		<SimpleData name="LON">-73.95218000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">1 Ave @ 80 ST</SimpleData>
+		<SimpleData name="LIVEID">323.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv196.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=323</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.95218,40.773012</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2</name>
+	<description>2</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">1.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75579300000</SimpleData>
+		<SimpleData name="LON">-74.00201800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">11 Ave @ 34 ST</SimpleData>
+		<SimpleData name="LIVEID">326.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv200.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=326</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.002018,40.755793</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>3</name>
+	<description>3</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">2.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76083000000</SimpleData>
+		<SimpleData name="LON">-73.99831700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">11 Avenue @ 42 Street</SimpleData>
+		<SimpleData name="LIVEID">192.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv31.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=192</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.998317,40.76083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>4</name>
+	<description>4</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">3.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80275400000</SimpleData>
+		<SimpleData name="LON">-73.93357000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">2 Ave @ 125 St</SimpleData>
+		<SimpleData name="LIVEID">247.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv102.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=247</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.93357,40.802754</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>5</name>
+	<description>5</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">4.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74603800000</SimpleData>
+		<SimpleData name="LON">-73.97491700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">2 Avenue @ 36 St-Midtown Tunnel</SimpleData>
+		<SimpleData name="LIVEID">165.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv4.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=165</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.974917,40.746038</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>6</name>
+	<description>6</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">5.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76091600000</SimpleData>
+		<SimpleData name="LON">-73.96405600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">2 Avenue @ QBB</SimpleData>
+		<SimpleData name="LIVEID">164.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv3.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=164</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.964056,40.760916</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>7</name>
+	<description>7</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">6.00000000000</SimpleData>
+		<SimpleData name="LAT">40.86358400000</SimpleData>
+		<SimpleData name="LON">-73.91692300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">207 ST @ 9 Ave</SimpleData>
+		<SimpleData name="LIVEID">328.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv203.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=328</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.916923,40.863584</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>8</name>
+	<description>8</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">7.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74151800000</SimpleData>
+		<SimpleData name="LON">-73.98956200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">5 Avenue @ 23 Street</SimpleData>
+		<SimpleData name="LIVEID">168.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv7.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=168</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.989562,40.741518</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>9</name>
+	<description>9</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">8.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75347500000</SimpleData>
+		<SimpleData name="LON">-73.98082900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">5 avenue @ 42 Street</SimpleData>
+		<SimpleData name="LIVEID">167.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv6.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=167</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.980829,40.753475</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>10</name>
+	<description>10</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">9.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75789600000</SimpleData>
+		<SimpleData name="LON">-73.97767400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">5 Avenue @ 49 Street</SimpleData>
+		<SimpleData name="LIVEID">169.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv8.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=169</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.977674,40.757896</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>11</name>
+	<description>11</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">10.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74974400000</SimpleData>
+		<SimpleData name="LON">-73.98781300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">6 Avenue @ 34 Street</SimpleData>
+		<SimpleData name="LIVEID">170.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv9.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=170</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.987813,40.749744</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>12</name>
+	<description>12</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">11.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75481600000</SimpleData>
+		<SimpleData name="LON">-73.98412200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">6 Avenue @ 42 Street</SimpleData>
+		<SimpleData name="LIVEID">173.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv12.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=173</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.984122,40.754816</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>13</name>
+	<description>13</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">12.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75926100000</SimpleData>
+		<SimpleData name="LON">-73.98087100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">6 Avenue @ 49 Street</SimpleData>
+		<SimpleData name="LIVEID">171.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv10.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=171</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.980871,40.759261</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>14</name>
+	<description>14</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">13.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80897200000</SimpleData>
+		<SimpleData name="LON">-73.94832700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">7 Ave @ 125 Street</SimpleData>
+		<SimpleData name="LIVEID">225.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv66.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=225</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.948327,40.808972</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>15</name>
+	<description>15</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">14.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82163500000</SimpleData>
+		<SimpleData name="LON">-73.93907500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">7 Ave @ 145 Street</SimpleData>
+		<SimpleData name="LIVEID">227.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv68.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=227</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.939075,40.821635</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>16</name>
+	<description>16</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">15.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80055300000</SimpleData>
+		<SimpleData name="LON">-73.95819400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">8 Ave @ 110 St</SimpleData>
+		<SimpleData name="LIVEID">229.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv70.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=229</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.958194,40.800553</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>17</name>
+	<description>17</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">16.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75221500000</SimpleData>
+		<SimpleData name="LON">-73.99349900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">8 Avenue @ 34 Street</SimpleData>
+		<SimpleData name="LIVEID">180.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv19.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=180</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.993499,40.752215</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>18</name>
+	<description>18</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">17.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75719700000</SimpleData>
+		<SimpleData name="LON">-73.98975500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">8 Avenue @ 42 Street</SimpleData>
+		<SimpleData name="LIVEID">181.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv20.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=181</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.989755,40.757197</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>19</name>
+	<description>19</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">18.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76696900000</SimpleData>
+		<SimpleData name="LON">-73.98226500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">8 Avenue @ Columbus Cr</SimpleData>
+		<SimpleData name="LIVEID">179.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv18.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=179</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.982265,40.766969</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>20</name>
+	<description>20</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">19.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75087730000</SimpleData>
+		<SimpleData name="LON">-73.99812650000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">9 Ave @ 30 St</SimpleData>
+		<SimpleData name="LIVEID">359.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv250.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=359</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.9981265,40.7508773</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>21</name>
+	<description>21</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">20.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75336100000</SimpleData>
+		<SimpleData name="LON">-73.99630000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">9th Avenue @ 34 Street</SimpleData>
+		<SimpleData name="LIVEID">178.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv17.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=178</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.9963,40.753361</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>22</name>
+	<description>22</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">21.00000000000</SimpleData>
+		<SimpleData name="LAT">40.69633800000</SimpleData>
+		<SimpleData name="LON">-73.98888200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Adams @ Tillary</SimpleData>
+		<SimpleData name="LIVEID">135.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv89.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=135</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.988882,40.696338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23</name>
+	<description>23</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">22.00000000000</SimpleData>
+		<SimpleData name="LAT">40.84615900000</SimpleData>
+		<SimpleData name="LON">-73.93234500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Amsterdam Ave @ 178 Street</SimpleData>
+		<SimpleData name="LIVEID">190.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv29.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=190</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.932345,40.846159</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>24</name>
+	<description>24</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">23.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71750100000</SimpleData>
+		<SimpleData name="LON">-73.99927100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Baxter @ Canal Street</SimpleData>
+		<SimpleData name="LIVEID">172.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv11.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=172</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.999271,40.717501</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>25</name>
+	<description>25</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">24.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66660000000</SimpleData>
+		<SimpleData name="LON">-73.81040000000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Belt @ 130 St</SimpleData>
+		<SimpleData name="LIVEID">128.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=128</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.8104,40.6666</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>26</name>
+	<description>26</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">25.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66583800000</SimpleData>
+		<SimpleData name="LON">-73.75212200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt @ 225 St</SimpleData>
+		<SimpleData name="LIVEID">148.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv117.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=148</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.752122,40.665838</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>27</name>
+	<description>27</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">26.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66569810000</SimpleData>
+		<SimpleData name="LON">-73.74469757000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Belt @ Brookville</SimpleData>
+		<SimpleData name="LIVEID">262.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=262</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.7446975699999,40.6656981</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>28</name>
+	<description>28</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">27.00000000000</SimpleData>
+		<SimpleData name="LAT">40.58580000000</SimpleData>
+		<SimpleData name="LON">-73.93110000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt @ Knapp</SimpleData>
+		<SimpleData name="LIVEID">250.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv125.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=250</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.9311,40.5858</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>29</name>
+	<description>29</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">28.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60450000000</SimpleData>
+		<SimpleData name="LON">-73.89870000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt Parkway @ Paerdegat Basin Bridge</SimpleData>
+		<SimpleData name="LIVEID">275.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv167.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=275</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.8987,40.6045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>30</name>
+	<description>30</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">29.00000000000</SimpleData>
+		<SimpleData name="LAT">40.63980000000</SimpleData>
+		<SimpleData name="LON">-74.03580000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt Pkwy @ 68 St</SimpleData>
+		<SimpleData name="LIVEID">139.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv114.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=139</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.0358,40.6398</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>31</name>
+	<description>31</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">30.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66609100000</SimpleData>
+		<SimpleData name="LON">-73.84158100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt Pkwy @ Cross Bay Blvd</SimpleData>
+		<SimpleData name="LIVEID">231.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv72.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=231</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.841581,40.666091</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>32</name>
+	<description>32</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">31.00000000000</SimpleData>
+		<SimpleData name="LAT">40.65170000000</SimpleData>
+		<SimpleData name="LON">-73.86590000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt Pkwy @ Erskine</SimpleData>
+		<SimpleData name="LIVEID">141.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv116.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=141</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.8659,40.6517</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>33</name>
+	<description>33</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">32.00000000000</SimpleData>
+		<SimpleData name="LAT">40.59700000000</SimpleData>
+		<SimpleData name="LON">-73.90740000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt Pkwy @ Flatbush</SimpleData>
+		<SimpleData name="LIVEID">132.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv61.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=132</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.9074,40.597</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>34</name>
+	<description>34</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">33.00000000000</SimpleData>
+		<SimpleData name="LAT">40.58410000000</SimpleData>
+		<SimpleData name="LON">-73.96700000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Belt Pkwy @ Ocean Pkwy</SimpleData>
+		<SimpleData name="LIVEID">140.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv115.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=140</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.967,40.5841</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>35</name>
+	<description>35</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">34.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71616800000</SimpleData>
+		<SimpleData name="LON">-73.99605300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Bowery @ Canal Street</SimpleData>
+		<SimpleData name="LIVEID">174.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv13.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=174</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.996053,40.716168</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>36</name>
+	<description>36</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">35.00000000000</SimpleData>
+		<SimpleData name="LAT">40.69890000000</SimpleData>
+		<SimpleData name="LON">-73.96230000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">BQE @ Bklyn Navy Yard</SimpleData>
+		<SimpleData name="LIVEID">138.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv105.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=138</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.9623,40.6989</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>37</name>
+	<description>37</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">36.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74874400000</SimpleData>
+		<SimpleData name="LON">-73.89626200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">BQE @ Broadway</SimpleData>
+		<SimpleData name="LIVEID">142.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv106.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=142</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.896262,40.748744</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>38</name>
+	<description>38</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">37.00000000000</SimpleData>
+		<SimpleData name="LAT">40.67565300000</SimpleData>
+		<SimpleData name="LON">-74.00098600000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">BQE @ Hamilton Ave B-G Ramp</SimpleData>
+		<SimpleData name="LIVEID">205.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=205</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.000986,40.675653</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>39</name>
+	<description>39</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">38.00000000000</SimpleData>
+		<SimpleData name="LAT">40.84168000000</SimpleData>
+		<SimpleData name="LON">-73.93933500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Broadway @ 169 Street</SimpleData>
+		<SimpleData name="LIVEID">224.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv65.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=224</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.939335,40.84168</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>40</name>
+	<description>40</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">39.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75870000000</SimpleData>
+		<SimpleData name="LON">-73.98534500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Broadway @ 46 Street</SimpleData>
+		<SimpleData name="LIVEID">187.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv26.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=187</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.985345,40.7587</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>41</name>
+	<description>41</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">40.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71743100000</SimpleData>
+		<SimpleData name="LON">-74.00365800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Broadway @ Franklin St</SimpleData>
+		<SimpleData name="LIVEID">355.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv226.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=355</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.003658,40.717431</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>42</name>
+	<description>42</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">41.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70491700000</SimpleData>
+		<SimpleData name="LON">-74.01502500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Broadway @ Greenwich St</SimpleData>
+		<SimpleData name="LIVEID">354.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv208.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=354</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.015025,40.704917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>43</name>
+	<description>43</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">42.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71956100000</SimpleData>
+		<SimpleData name="LON">-74.00053900000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Broadway @ Howard St</SimpleData>
+		<SimpleData name="LIVEID">353.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=353</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.000539,40.719561</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>44</name>
+	<description>44</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">43.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70837800000</SimpleData>
+		<SimpleData name="LON">-74.01130000000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Broadway @ Pine St</SimpleData>
+		<SimpleData name="LIVEID">352.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=352</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.0113,40.708378</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>45</name>
+	<description>45</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">44.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71150300000</SimpleData>
+		<SimpleData name="LON">-74.00865600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Broadway @ Vesey St</SimpleData>
+		<SimpleData name="LIVEID">351.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv223.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=351</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.008656,40.711503</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>46</name>
+	<description>46</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">45.00000000000</SimpleData>
+		<SimpleData name="LAT">40.89386600000</SimpleData>
+		<SimpleData name="LON">-73.86329700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Bronx River Pkwy @ 233 ST</SimpleData>
+		<SimpleData name="LIVEID">321.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv194.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=321</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.863297,40.893866</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>47</name>
+	<description>47</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">46.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70456700000</SimpleData>
+		<SimpleData name="LON">-74.01520500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Brooklyn Battery Tunnel @ West Street</SimpleData>
+		<SimpleData name="LIVEID">311.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.208.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=311</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.015205,40.704567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>48</name>
+	<description>48</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">47.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70976700000</SimpleData>
+		<SimpleData name="LON">-74.00166700000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Brooklyn Bridge - Manhattan Side</SimpleData>
+		<SimpleData name="LIVEID">350.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=350</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.001667,40.709767</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>49</name>
+	<description>49</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">48.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71239400000</SimpleData>
+		<SimpleData name="LON">-74.00472200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Brooklyn Bridge @ Centre Street</SimpleData>
+		<SimpleData name="LIVEID">175.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv14.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=175</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.004722,40.712394</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>50</name>
+	<description>50</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">49.00000000000</SimpleData>
+		<SimpleData name="LAT">40.68143000000</SimpleData>
+		<SimpleData name="LON">-74.00528900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Brooklyn-Battery Tunnel @ Brooklyn Side</SimpleData>
+		<SimpleData name="LIVEID">312.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.208.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=312</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.005289,40.68143</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>51</name>
+	<description>51</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">50.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80633700000</SimpleData>
+		<SimpleData name="LON">-73.90835200000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Bruckner @ Triboro Bridge</SimpleData>
+		<SimpleData name="LIVEID">145.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=145</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.908352,40.806337</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>52</name>
+	<description>52</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">51.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82440700000</SimpleData>
+		<SimpleData name="LON">-73.87253300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Bruckner Expy @ Bronx River Pkwy</SimpleData>
+		<SimpleData name="LIVEID">196.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv35.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=196</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.872533,40.824407</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>53</name>
+	<description>53</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">52.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76907900000</SimpleData>
+		<SimpleData name="LON">-73.98092500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Central Park S @ Columbus Cr</SimpleData>
+		<SimpleData name="LIVEID">166.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv5.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=166</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.980925,40.769079</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>54</name>
+	<description>54</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">53.00000000000</SimpleData>
+		<SimpleData name="LAT">40.79165300000</SimpleData>
+		<SimpleData name="LON">-73.96467900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Central Park W @ 96 Street</SimpleData>
+		<SimpleData name="LIVEID">329.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv69.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=329</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.964679,40.791653</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>55</name>
+	<description>55</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">54.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71825800000</SimpleData>
+		<SimpleData name="LON">-74.00546100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Church St @ Franklin St</SimpleData>
+		<SimpleData name="LIVEID">348.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv225.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=348</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.005461,40.718258</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>56</name>
+	<description>56</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">55.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71331900000</SimpleData>
+		<SimpleData name="LON">-74.00906400000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Church St @ Park Pl</SimpleData>
+		<SimpleData name="LIVEID">347.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=347</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.009064,40.713319</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>57</name>
+	<description>57</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">56.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71205300000</SimpleData>
+		<SimpleData name="LON">-74.01012900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Church Street @ Vesey</SimpleData>
+		<SimpleData name="LIVEID">163.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv2.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=163</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.010129,40.712053</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>58</name>
+	<description>58</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">57.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75824700000</SimpleData>
+		<SimpleData name="LON">-73.77729600000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Clearview @ Northern Blvd</SimpleData>
+		<SimpleData name="LIVEID">123.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=123</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.777296,40.758247</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>59</name>
+	<description>59</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">58.00000000000</SimpleData>
+		<SimpleData name="LAT">40.83636000000</SimpleData>
+		<SimpleData name="LON">-73.87365500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Cross Bronx Expy @ E of Bronx River Pkwy</SimpleData>
+		<SimpleData name="LIVEID">199.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv38.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=199</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.873655,40.83636</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>60</name>
+	<description>60</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">59.00000000000</SimpleData>
+		<SimpleData name="LAT">40.84476000000</SimpleData>
+		<SimpleData name="LON">-73.92477700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Cross Bronx Expy @ E of Undercliff (GWB)</SimpleData>
+		<SimpleData name="LIVEID">198.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv37.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=198</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.924777,40.84476</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>61</name>
+	<description>61</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">60.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82471600000</SimpleData>
+		<SimpleData name="LON">-73.82474000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Cross Bronx Expy @ Randall Avenue</SimpleData>
+		<SimpleData name="LIVEID">194.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv33.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=194</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.82474,40.824716</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>62</name>
+	<description>62</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">61.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77927800000</SimpleData>
+		<SimpleData name="LON">-73.76856400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Cross Island Pkwy @ Bayside Marina</SimpleData>
+		<SimpleData name="LIVEID">281.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv178.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=281</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.768564,40.779278</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>63</name>
+	<description>63</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">62.00000000000</SimpleData>
+		<SimpleData name="LAT">40.78818500000</SimpleData>
+		<SimpleData name="LON">-73.79053900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Cross Island Pkwy @ Throgsneck</SimpleData>
+		<SimpleData name="LIVEID">143.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv120.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=143</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.790539,40.788185</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>64</name>
+	<description>64</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">63.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74075300000</SimpleData>
+		<SimpleData name="LON">-73.72667000000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Cross Island Pkwy @ Union Tpke</SimpleData>
+		<SimpleData name="LIVEID">120.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=120</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.72667,40.740753</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>65</name>
+	<description>65</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">64.00000000000</SimpleData>
+		<SimpleData name="LAT">40.59775800000</SimpleData>
+		<SimpleData name="LON">-73.82082000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">CrossBay @ North Bound</SimpleData>
+		<SimpleData name="LIVEID">315.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.205.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=315</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.82082,40.597758</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>66</name>
+	<description>66</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">65.00000000000</SimpleData>
+		<SimpleData name="LAT">40.58795400000</SimpleData>
+		<SimpleData name="LON">-73.81833200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">CrossBay @ South Bound</SimpleData>
+		<SimpleData name="LIVEID">316.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.205.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=316</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.818332,40.587954</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>67</name>
+	<description>67</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">66.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75898200000</SimpleData>
+		<SimpleData name="LON">-73.99393500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Dyer @ 42 Street</SimpleData>
+		<SimpleData name="LIVEID">182.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv21.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=182</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.993935,40.758982</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>68</name>
+	<description>68</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">67.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75894700000</SimpleData>
+		<SimpleData name="LON">-73.96446100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">E 57 St @ QBB</SimpleData>
+		<SimpleData name="LIVEID">176.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv15.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=176</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.964461,40.758947</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>69</name>
+	<description>69</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">68.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76271100000</SimpleData>
+		<SimpleData name="LON">-73.96156900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">E 63 St @ QBB</SimpleData>
+		<SimpleData name="LIVEID">177.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv16.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=177</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.961569,40.762711</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>70</name>
+	<description>70</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">69.00000000000</SimpleData>
+		<SimpleData name="LAT">40.79167000000</SimpleData>
+		<SimpleData name="LON">-73.93541300000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">FDR @ 111 ST</SimpleData>
+		<SimpleData name="LIVEID">274.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=274</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.935413,40.79167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>71</name>
+	<description>71</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">70.00000000000</SimpleData>
+		<SimpleData name="LAT">40.81234700000</SimpleData>
+		<SimpleData name="LON">-73.93485500000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">FDR @ 135 Street</SimpleData>
+		<SimpleData name="LIVEID">188.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=188</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.934855,40.812347</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>72</name>
+	<description>72</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">71.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82803000000</SimpleData>
+		<SimpleData name="LON">-73.93488200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">FDR @ 155 Street</SimpleData>
+		<SimpleData name="LIVEID">233.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv74.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=233</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.934882,40.82803</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>73</name>
+	<description>73</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">72.00000000000</SimpleData>
+		<SimpleData name="LAT">40.73531400000</SimpleData>
+		<SimpleData name="LON">-73.97477700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">FDR @ 23 St</SimpleData>
+		<SimpleData name="LIVEID">253.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv134.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=253</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.974777,40.735314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>74</name>
+	<description>74</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">73.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80704400000</SimpleData>
+		<SimpleData name="LON">-73.93371700000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">FDR @ 3 Ave</SimpleData>
+		<SimpleData name="LIVEID">272.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=272</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.933717,40.807044</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>75</name>
+	<description>75</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">74.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74455300000</SimpleData>
+		<SimpleData name="LON">-73.97117200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">FDR Dr @ 36 Street</SimpleData>
+		<SimpleData name="LIVEID">184.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv23.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=184</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.971172,40.744553</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>76</name>
+	<description>76</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">75.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76954900000</SimpleData>
+		<SimpleData name="LON">-73.94814800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">FDR Dr @ 78 Street</SimpleData>
+		<SimpleData name="LIVEID">185.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv24.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=185</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.948148,40.769549</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>77</name>
+	<description>77</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">76.00000000000</SimpleData>
+		<SimpleData name="LAT">40.78288100000</SimpleData>
+		<SimpleData name="LON">-73.94391100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">FDR Dr @ 96 Street</SimpleData>
+		<SimpleData name="LIVEID">186.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv25.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=186</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.943911,40.782881</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>78</name>
+	<description>78</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">77.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70925500000</SimpleData>
+		<SimpleData name="LON">-73.99603100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">FDR Dr @ Catherine Street</SimpleData>
+		<SimpleData name="LIVEID">183.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv22.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=183</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.996031,40.709255</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>79</name>
+	<description>79</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">78.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70309000000</SimpleData>
+		<SimpleData name="LON">-74.00770400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">FDR Dr @ Old Slip</SimpleData>
+		<SimpleData name="LIVEID">223.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv64.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=223</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.007704,40.70309</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>80</name>
+	<description>80</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">79.00000000000</SimpleData>
+		<SimpleData name="LAT">40.69458300000</SimpleData>
+		<SimpleData name="LON">-73.98444200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Flatbush @ Tillary</SimpleData>
+		<SimpleData name="LIVEID">134.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv88.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=134</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.984442,40.694583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>81</name>
+	<description>81</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">80.00000000000</SimpleData>
+		<SimpleData name="LAT">40.85816300000</SimpleData>
+		<SimpleData name="LON">-73.88436800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Fordham Rd @ Hughes Ave</SimpleData>
+		<SimpleData name="LIVEID">327.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv202.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=327</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.884368,40.858163</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>82</name>
+	<description>82</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">81.00000000000</SimpleData>
+		<SimpleData name="LAT">40.86255500000</SimpleData>
+		<SimpleData name="LON">-73.89668600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Fordham Rd and Grand Concourse</SimpleData>
+		<SimpleData name="LIVEID">318.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv201.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=318</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.896686,40.862555</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>83</name>
+	<description>83</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">82.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71687900000</SimpleData>
+		<SimpleData name="LON">-73.80006900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">GCP @ 166 St</SimpleData>
+		<SimpleData name="LIVEID">119.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv127.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=119</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.800069,40.716879</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>84</name>
+	<description>84</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">83.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72754700000</SimpleData>
+		<SimpleData name="LON">-73.75409500000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">GCP @ 214 St</SimpleData>
+		<SimpleData name="LIVEID">118.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=118</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.754095,40.727547</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>85</name>
+	<description>85</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">84.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77052600000</SimpleData>
+		<SimpleData name="LON">-73.91754700000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">GCP @ 31 ST</SimpleData>
+		<SimpleData name="LIVEID">160.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=160</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.917547,40.770526</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>86</name>
+	<description>86</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">85.00000000000</SimpleData>
+		<SimpleData name="LAT">40.63998800000</SimpleData>
+		<SimpleData name="LON">-74.02171100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Gowanus Expy @ 63 Street</SimpleData>
+		<SimpleData name="LIVEID">210.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv49.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=210</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.021711,40.639988</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>87</name>
+	<description>87</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">86.00000000000</SimpleData>
+		<SimpleData name="LAT">40.61630000000</SimpleData>
+		<SimpleData name="LON">-74.02620000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Gowanus Expy @ 92 St</SimpleData>
+		<SimpleData name="LIVEID">136.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv103.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=136</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.0262,40.6163</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>88</name>
+	<description>88</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">87.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66761500000</SimpleData>
+		<SimpleData name="LON">-73.99613400000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Gowanus Expy @ Gowanus Prospect</SimpleData>
+		<SimpleData name="LIVEID">207.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=207</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.996134,40.667615</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>89</name>
+	<description>89</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">88.00000000000</SimpleData>
+		<SimpleData name="LAT">40.68462900000</SimpleData>
+		<SimpleData name="LON">-74.00113800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Gowanus Expy @ Sackett St</SimpleData>
+		<SimpleData name="LIVEID">206.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv45.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=206</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.001138,40.684629</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>90</name>
+	<description>90</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">89.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60915900000</SimpleData>
+		<SimpleData name="LON">-74.12398100000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Gower St WOF Manor Rd Underpass</SimpleData>
+		<SimpleData name="LIVEID">259.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=259</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.123981,40.609159</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>91</name>
+	<description>91</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">90.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66740000000</SimpleData>
+		<SimpleData name="LON">-73.77110000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">GR Brewer @ Belt</SimpleData>
+		<SimpleData name="LIVEID">152.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv163.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=152</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.7711,40.6674</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>92</name>
+	<description>92</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">91.00000000000</SimpleData>
+		<SimpleData name="LAT">40.67274400000</SimpleData>
+		<SimpleData name="LON">-73.96878100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Grand Army Plaza</SimpleData>
+		<SimpleData name="LIVEID">159.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv98.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=159</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.968781,40.672744</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>93</name>
+	<description>93</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">92.00000000000</SimpleData>
+		<SimpleData name="LAT">40.85035400000</SimpleData>
+		<SimpleData name="LON">-73.94060400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">GWB Approach</SimpleData>
+		<SimpleData name="LIVEID">248.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv112.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=248</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.940604,40.850354</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>94</name>
+	<description>94</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">93.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66044900000</SimpleData>
+		<SimpleData name="LON">-73.84312200000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">H Beach @ 158 St</SimpleData>
+		<SimpleData name="LIVEID">127.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=127</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.843122,40.660449</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>95</name>
+	<description>95</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">94.00000000000</SimpleData>
+		<SimpleData name="LAT">40.84705800000</SimpleData>
+		<SimpleData name="LON">-73.92866700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Harlem River Dr @ GWashington Bridge</SimpleData>
+		<SimpleData name="LIVEID">226.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv67.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=226</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.928667,40.847058</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>96</name>
+	<description>96</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">95.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77970000000</SimpleData>
+		<SimpleData name="LON">-73.98852700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson @ 70 Street</SimpleData>
+		<SimpleData name="LIVEID">249.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv113.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=249</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.988527,40.7797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>97</name>
+	<description>97</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">96.00000000000</SimpleData>
+		<SimpleData name="LAT">40.87843700000</SimpleData>
+		<SimpleData name="LON">-73.92105800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson @ North Bound</SimpleData>
+		<SimpleData name="LIVEID">307.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.204.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=307</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.921058,40.878437</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>98</name>
+	<description>98</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">97.00000000000</SimpleData>
+		<SimpleData name="LAT">40.87607100000</SimpleData>
+		<SimpleData name="LON">-73.92479900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson @ South Bound</SimpleData>
+		<SimpleData name="LIVEID">308.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.204.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=308</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.924799,40.876071</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>99</name>
+	<description>99</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">98.00000000000</SimpleData>
+		<SimpleData name="LAT">40.81822630000</SimpleData>
+		<SimpleData name="LON">-73.96137710000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson Pkwy @ 125 St</SimpleData>
+		<SimpleData name="LIVEID">279.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=279</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.9613771,40.8182263</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>100</name>
+	<description>100</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">99.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82067000000</SimpleData>
+		<SimpleData name="LON">-73.95839000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson Pkwy @ 135 St</SimpleData>
+		<SimpleData name="LIVEID">162.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv1.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=162</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.95839,40.82067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>101</name>
+	<description>101</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">100.00000000000</SimpleData>
+		<SimpleData name="LAT">40.83269600000</SimpleData>
+		<SimpleData name="LON">-73.94971400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson Pkwy @ 153 St</SimpleData>
+		<SimpleData name="LIVEID">189.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv28.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=189</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.949714,40.832696</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>102</name>
+	<description>102</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">101.00000000000</SimpleData>
+		<SimpleData name="LAT">40.88456100000</SimpleData>
+		<SimpleData name="LON">-73.91465300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson Pkwy @ 232 St</SimpleData>
+		<SimpleData name="LIVEID">278.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv173.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=278</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.914653,40.884561</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>103</name>
+	<description>103</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">102.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77068100000</SimpleData>
+		<SimpleData name="LON">-73.99432000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson Pkwy @ 58 ST</SimpleData>
+		<SimpleData name="LIVEID">280.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv176.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=280</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.99432,40.770681</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>104</name>
+	<description>104</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">103.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75368100000</SimpleData>
+		<SimpleData name="LON">-73.97526800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Henry Hudson Pkwy @ 96 St</SimpleData>
+		<SimpleData name="LIVEID">291.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv188.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=291</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.975268,40.753681</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>105</name>
+	<description>105</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">104.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72592500000</SimpleData>
+		<SimpleData name="LON">-74.00950600000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Holland Tunnel</SimpleData>
+		<SimpleData name="LIVEID">157.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=157</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.009506,40.725925</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>106</name>
+	<description>106</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">105.00000000000</SimpleData>
+		<SimpleData name="LAT">40.84068100000</SimpleData>
+		<SimpleData name="LON">-73.83839500000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Hutchinson River Pkwy @ East Tremont</SimpleData>
+		<SimpleData name="LIVEID">201.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=201</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.838395,40.840681</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>107</name>
+	<description>107</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">106.00000000000</SimpleData>
+		<SimpleData name="LAT">40.81404800000</SimpleData>
+		<SimpleData name="LON">-73.83646700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Hutchinson Rvr Pkwy @ Whitestone Br</SimpleData>
+		<SimpleData name="LIVEID">193.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv32.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=193</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.836467,40.814048</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>108</name>
+	<description>108</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">107.00000000000</SimpleData>
+		<SimpleData name="LAT">40.57046900000</SimpleData>
+		<SimpleData name="LON">-74.10974900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Hylan Blvd @ New Dorp Ln</SimpleData>
+		<SimpleData name="LIVEID">358.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv247.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=358</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.109749,40.570469</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>109</name>
+	<description>109</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">108.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76248800000</SimpleData>
+		<SimpleData name="LON">-73.96863100000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Lexington @ 59 St</SimpleData>
+		<SimpleData name="LIVEID">283.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=283</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.968631,40.762488</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>110</name>
+	<description>110</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">109.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77040000000</SimpleData>
+		<SimpleData name="LON">-73.96222500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Lexington @ 72 St</SimpleData>
+		<SimpleData name="LIVEID">284.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv181.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=284</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.962225,40.7704</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>111</name>
+	<description>111</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">110.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77948500000</SimpleData>
+		<SimpleData name="LON">-73.95560500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Lexington @ 86 St</SimpleData>
+		<SimpleData name="LIVEID">285.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv182.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=285</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.955605,40.779485</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>112</name>
+	<description>112</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">111.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72979400000</SimpleData>
+		<SimpleData name="LON">-73.87768400000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">LIE @ 84 St</SimpleData>
+		<SimpleData name="LIVEID">270.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=270</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.877684,40.729794</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>113</name>
+	<description>113</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">112.00000000000</SimpleData>
+		<SimpleData name="LAT">40.73447800000</SimpleData>
+		<SimpleData name="LON">-73.92217100000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">LIE @ BQE</SimpleData>
+		<SimpleData name="LIVEID">361.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=361</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.922171,40.734478</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>114</name>
+	<description>114</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">113.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74015000000</SimpleData>
+		<SimpleData name="LON">-73.84516400000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">LIE @ GCP</SimpleData>
+		<SimpleData name="LIVEID">221.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=221</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.845164,40.74015</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>115</name>
+	<description>115</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">114.00000000000</SimpleData>
+		<SimpleData name="LAT">40.73894300000</SimpleData>
+		<SimpleData name="LON">-73.81504700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">LIE @ Kissena Blvd</SimpleData>
+		<SimpleData name="LIVEID">121.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv129.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=121</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.815047,40.738943</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>116</name>
+	<description>116</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">115.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76062500000</SimpleData>
+		<SimpleData name="LON">-73.73191400000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">LIE @ Marathon Blvd</SimpleData>
+		<SimpleData name="LIVEID">122.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=122</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.731914,40.760625</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>117</name>
+	<description>117</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">116.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74135200000</SimpleData>
+		<SimpleData name="LON">-73.95457300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">LIE @ Midtown Tunnel</SimpleData>
+		<SimpleData name="LIVEID">216.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv55.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=216</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.954573,40.741352</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>118</name>
+	<description>118</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">117.00000000000</SimpleData>
+		<SimpleData name="LAT">40.73275200000</SimpleData>
+		<SimpleData name="LON">-73.86835800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">LIE near Woodhaven Blvd</SimpleData>
+		<SimpleData name="LIVEID">219.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv58.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=219</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.868358,40.732752</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>119</name>
+	<description>119</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">118.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75884100000</SimpleData>
+		<SimpleData name="LON">-73.99906800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Lincoln Tunnel</SimpleData>
+		<SimpleData name="LIVEID">156.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv91.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=156</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.999068,40.758841</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>120</name>
+	<description>120</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">119.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82811500000</SimpleData>
+		<SimpleData name="LON">-73.93144700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Macombs Dam Bridge</SimpleData>
+		<SimpleData name="LIVEID">294.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv191.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=294</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.931447,40.828115</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>121</name>
+	<description>121</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">120.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80944300000</SimpleData>
+		<SimpleData name="LON">-73.92936100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Major Deegan @ Triboro Bridge</SimpleData>
+		<SimpleData name="LIVEID">146.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv111.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=146</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.929361,40.809443</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>122</name>
+	<description>122</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">121.00000000000</SimpleData>
+		<SimpleData name="LAT">40.84994200000</SimpleData>
+		<SimpleData name="LON">-73.92310900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Major Deegan Expy @ N of Alex Hamilton Bridge</SimpleData>
+		<SimpleData name="LIVEID">203.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv42.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=203</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.923109,40.849942</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>123</name>
+	<description>123</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">122.00000000000</SimpleData>
+		<SimpleData name="LAT">40.83970400000</SimpleData>
+		<SimpleData name="LON">-73.92931900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Major Deegan Expy @ S of W 167 Street</SimpleData>
+		<SimpleData name="LIVEID">202.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv41.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=202</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.929319,40.839704</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>124</name>
+	<description>124</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">123.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70617900000</SimpleData>
+		<SimpleData name="LON">-74.01650100000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Manhattan BBT Entrance</SimpleData>
+		<SimpleData name="LIVEID">287.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=287</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.016501,40.706179</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>125</name>
+	<description>125</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">124.00000000000</SimpleData>
+		<SimpleData name="LAT">40.58061700000</SimpleData>
+		<SimpleData name="LON">-73.89015600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Marine Parkway @ North Bound</SimpleData>
+		<SimpleData name="LIVEID">313.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.206.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=313</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.890156,40.580617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>126</name>
+	<description>126</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">125.00000000000</SimpleData>
+		<SimpleData name="LAT">40.56814000000</SimpleData>
+		<SimpleData name="LON">-73.88157900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Marine Parkway @ South Bound</SimpleData>
+		<SimpleData name="LIVEID">314.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.206.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=314</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.881579,40.56814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>127</name>
+	<description>127</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">126.00000000000</SimpleData>
+		<SimpleData name="LAT">40.88390000000</SimpleData>
+		<SimpleData name="LON">-73.82590000000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">NE Thruway @ Conner St</SimpleData>
+		<SimpleData name="LIVEID">277.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=277</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.8259,40.8839</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>128</name>
+	<description>128</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">127.00000000000</SimpleData>
+		<SimpleData name="LAT">40.86847600000</SimpleData>
+		<SimpleData name="LON">-73.83266700000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">New Eng Thru @ Bartow</SimpleData>
+		<SimpleData name="LIVEID">147.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=147</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.832667,40.868476</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>129</name>
+	<description>129</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">128.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82232000000</SimpleData>
+		<SimpleData name="LON">-73.81916900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">New England Trwy @ East Tremont</SimpleData>
+		<SimpleData name="LIVEID">197.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv36.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=197</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.819169,40.82232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>130</name>
+	<description>130</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">129.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75368100000</SimpleData>
+		<SimpleData name="LON">-73.90210900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Northern Blvd @ 60 St</SimpleData>
+		<SimpleData name="LIVEID">290.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv187.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=290</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.902109,40.753681</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>131</name>
+	<description>131</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">130.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75839100000</SimpleData>
+		<SimpleData name="LON">-73.85604800000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Northern Blvd @ GCP</SimpleData>
+		<SimpleData name="LIVEID">289.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=289</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.856048,40.758391</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>132</name>
+	<description>132</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">131.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74573700000</SimpleData>
+		<SimpleData name="LON">-73.76767900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Oceania @ LIE</SimpleData>
+		<SimpleData name="LIVEID">158.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv149.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=158</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.767679,40.745737</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>133</name>
+	<description>133</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">132.00000000000</SimpleData>
+		<SimpleData name="LAT">40.52571400000</SimpleData>
+		<SimpleData name="LON">-74.23035600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Outerbridge Crossing @ Tyrellan Ave</SimpleData>
+		<SimpleData name="LIVEID">244.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv95.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=244</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.230356,40.525714</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>134</name>
+	<description>134</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">133.00000000000</SimpleData>
+		<SimpleData name="LAT">40.64977000000</SimpleData>
+		<SimpleData name="LON">-73.97544100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Prospect Expy @ Fort Hamilton Pkwy</SimpleData>
+		<SimpleData name="LIVEID">208.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv47.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=208</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.975441,40.64977</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>135</name>
+	<description>135</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">134.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72864300000</SimpleData>
+		<SimpleData name="LON">-73.85801800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Qns Blvd @ 65 Ave</SimpleData>
+		<SimpleData name="LIVEID">124.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv146.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=124</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.858018,40.728643</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>136</name>
+	<description>136</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">135.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74149500000</SimpleData>
+		<SimpleData name="LON">-73.89829300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Qns Blvd @ 65 Pl</SimpleData>
+		<SimpleData name="LIVEID">126.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv148.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=126</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.898293,40.741495</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>137</name>
+	<description>137</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">136.00000000000</SimpleData>
+		<SimpleData name="LAT">40.73428400000</SimpleData>
+		<SimpleData name="LON">-73.87246300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Qns Blvd @ QnCnt Mall</SimpleData>
+		<SimpleData name="LIVEID">125.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv145.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=125</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.872463,40.734284</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>138</name>
+	<description>138</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">137.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74403300000</SimpleData>
+		<SimpleData name="LON">-73.92620300000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Queens Blvd @ 36 Street</SimpleData>
+		<SimpleData name="LIVEID">218.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=218</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.926203,40.744033</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>139</name>
+	<description>139</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">138.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74262700000</SimpleData>
+		<SimpleData name="LON">-73.91405600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Queens Blvd @ 51 St</SimpleData>
+		<SimpleData name="LIVEID">288.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv185.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=288</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.914056,40.742627</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>140</name>
+	<description>140</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">139.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74303400000</SimpleData>
+		<SimpleData name="LON">-73.93462400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Queens Blvd @ Van Dam</SimpleData>
+		<SimpleData name="LIVEID">161.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv56.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=161</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.934624,40.743034</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>141</name>
+	<description>141</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">140.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74793500000</SimpleData>
+		<SimpleData name="LON">-73.96903200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Queens Midtown Tunnel @ Manhattan Bound</SimpleData>
+		<SimpleData name="LIVEID">320.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.207.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=320</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.969032,40.747935</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>142</name>
+	<description>142</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">141.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74221500000</SimpleData>
+		<SimpleData name="LON">-73.95886700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Queens Midtown Tunnel @ Queens Bound</SimpleData>
+		<SimpleData name="LIVEID">310.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.207.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=310</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.958867,40.742215</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>143</name>
+	<description>143</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">142.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75018300000</SimpleData>
+		<SimpleData name="LON">-73.93809600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Queens Plaza N @ Queens Boro Bridge</SimpleData>
+		<SimpleData name="LIVEID">215.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv54.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=215</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.938096,40.750183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>144</name>
+	<description>144</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">143.00000000000</SimpleData>
+		<SimpleData name="LAT">40.61206500000</SimpleData>
+		<SimpleData name="LON">-74.15383900000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">SIE @ 440 DR M.L.King Expy Exit 9</SimpleData>
+		<SimpleData name="LIVEID">255.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=255</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.153839,40.612065</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>145</name>
+	<description>145</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">144.00000000000</SimpleData>
+		<SimpleData name="LAT">40.62221100000</SimpleData>
+		<SimpleData name="LON">-74.17428000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ 440- West Shore Expy Ext 5</SimpleData>
+		<SimpleData name="LIVEID">254.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv135.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=254</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.17428,40.622211</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>146</name>
+	<description>146</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">145.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60815500000</SimpleData>
+		<SimpleData name="LON">-74.13208400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Bradley Ave Exit 12</SimpleData>
+		<SimpleData name="LIVEID">258.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webdot2.nyctmc.org/cctv139.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=258</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.132084,40.608155</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>147</name>
+	<description>147</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">146.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60936100000</SimpleData>
+		<SimpleData name="LON">-74.09143400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Clove Rd</SimpleData>
+		<SimpleData name="LIVEID">245.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv96.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=245</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.091434,40.609361</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>148</name>
+	<description>148</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">147.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60400100000</SimpleData>
+		<SimpleData name="LON">-74.06914300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Fingerboard Rd</SimpleData>
+		<SimpleData name="LIVEID">261.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv142.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=261</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.069143,40.604001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>149</name>
+	<description>149</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">148.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60620700000</SimpleData>
+		<SimpleData name="LON">-74.07777400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Hylan Blvd</SimpleData>
+		<SimpleData name="LIVEID">252.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv133.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=252</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.077774,40.606207</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>150</name>
+	<description>150</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">149.00000000000</SimpleData>
+		<SimpleData name="LAT">40.61488500000</SimpleData>
+		<SimpleData name="LON">-74.15743500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Richmond Ave</SimpleData>
+		<SimpleData name="LIVEID">112.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv83.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=112</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.157435,40.614885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>151</name>
+	<description>151</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">150.00000000000</SimpleData>
+		<SimpleData name="LAT">40.61098600000</SimpleData>
+		<SimpleData name="LON">-74.11680000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Slosson Ave</SimpleData>
+		<SimpleData name="LIVEID">260.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv141.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=260</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.1168,40.610986</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>152</name>
+	<description>152</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">151.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60955000000</SimpleData>
+		<SimpleData name="LON">-74.15004600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Victory Blvd EOF Exit 9</SimpleData>
+		<SimpleData name="LIVEID">256.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv137.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=256</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.150046,40.60955</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>153</name>
+	<description>153</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">152.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60774600000</SimpleData>
+		<SimpleData name="LON">-74.14085400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">SIE @ Wolley Ave WOD Exit 11</SimpleData>
+		<SimpleData name="LIVEID">257.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv138.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=257</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.140854,40.607746</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>154</name>
+	<description>154</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">153.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71343600000</SimpleData>
+		<SimpleData name="LON">-73.99868600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">St James Pl @ Chatham Sq</SimpleData>
+		<SimpleData name="LIVEID">343.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv216.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=343</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.998686,40.713436</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>155</name>
+	<description>155</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">154.00000000000</SimpleData>
+		<SimpleData name="LAT">40.82116500000</SimpleData>
+		<SimpleData name="LON">-73.81448800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Throgs Neck Bridge @ Bronx Bound</SimpleData>
+		<SimpleData name="LIVEID">317.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.209.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=317</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.814488,40.821165</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>156</name>
+	<description>156</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">155.00000000000</SimpleData>
+		<SimpleData name="LAT">40.78908300000</SimpleData>
+		<SimpleData name="LON">-73.79157000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Throgs Neck Bridge @ Queens Bound</SimpleData>
+		<SimpleData name="LIVEID">304.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.209.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=304</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.79157,40.789083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>157</name>
+	<description>157</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">156.00000000000</SimpleData>
+		<SimpleData name="LAT">40.79960400000</SimpleData>
+		<SimpleData name="LON">-73.91851200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Triborough Bridge Bronx Bound</SimpleData>
+		<SimpleData name="LIVEID">298.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.201.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=298</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.918512,40.799604</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>158</name>
+	<description>158</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">157.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77796600000</SimpleData>
+		<SimpleData name="LON">-73.92538100000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Triborough Bridge Queens Bound</SimpleData>
+		<SimpleData name="LIVEID">299.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.201.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=299</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.925381,40.777966</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>159</name>
+	<description>159</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">158.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80090400000</SimpleData>
+		<SimpleData name="LON">-73.92921900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Triborough Bridges @ Manhattan Bound</SimpleData>
+		<SimpleData name="LIVEID">301.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.202.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=301</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.929219,40.800904</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>160</name>
+	<description>160</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">159.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70647378690</SimpleData>
+		<SimpleData name="LON">-74.01433467860</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Trinity @ Brooklyn Battery Tunnel</SimpleData>
+		<SimpleData name="LIVEID">222.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv63.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=222</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.0143346789999,40.7064737869999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>161</name>
+	<description>161</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">160.00000000000</SimpleData>
+		<SimpleData name="LAT">40.69687400000</SimpleData>
+		<SimpleData name="LON">-73.81346500000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Van Wyck @ Atlantic</SimpleData>
+		<SimpleData name="LIVEID">266.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=266</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.813465,40.696874</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>162</name>
+	<description>162</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">161.00000000000</SimpleData>
+		<SimpleData name="LAT">40.69400100000</SimpleData>
+		<SimpleData name="LON">-73.81177200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Van Wyck Expy @ 101 Avenue</SimpleData>
+		<SimpleData name="LIVEID">213.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv52.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=213</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.811772,40.694001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>163</name>
+	<description>163</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">162.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72438000000</SimpleData>
+		<SimpleData name="LON">-73.82903700000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Van Wyck Expy @ 72 Ave</SimpleData>
+		<SimpleData name="LIVEID">360.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=360</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.829037,40.72438</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>164</name>
+	<description>164</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">163.00000000000</SimpleData>
+		<SimpleData name="LAT">40.66587800000</SimpleData>
+		<SimpleData name="LON">-73.80183000000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Van Wyck Expy @ Belt Pkwy</SimpleData>
+		<SimpleData name="LIVEID">212.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=212</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.80183,40.665878</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>165</name>
+	<description>165</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">164.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74330200000</SimpleData>
+		<SimpleData name="LON">-73.83767300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Van Wyck Expy @ GCP Interchange</SimpleData>
+		<SimpleData name="LIVEID">214.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv53.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=214</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.837673,40.743302</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>166</name>
+	<description>166</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">165.00000000000</SimpleData>
+		<SimpleData name="LAT">40.73938100000</SimpleData>
+		<SimpleData name="LON">-73.83695400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">VAN WYCK EXPY S. OF LIE</SimpleData>
+		<SimpleData name="LIVEID">325.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv198.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=325</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.836954,40.739381</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>167</name>
+	<description>167</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">166.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72047750000</SimpleData>
+		<SimpleData name="LON">-74.00682440000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Varick St @ Beach St</SimpleData>
+		<SimpleData name="LIVEID">342.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv228.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=342</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.0068244,40.7204775</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>168</name>
+	<description>168</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">167.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60121300000</SimpleData>
+		<SimpleData name="LON">-74.05561900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Verrazano-Narrows @ Brooklyn Bound</SimpleData>
+		<SimpleData name="LIVEID">306.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.211.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=306</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.055619,40.601213</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>169</name>
+	<description>169</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">168.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60328300000</SimpleData>
+		<SimpleData name="LON">-74.05488700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Verrazano-Narrows @ Staten Island Bound</SimpleData>
+		<SimpleData name="LIVEID">305.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.211.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=305</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.054887,40.603283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>170</name>
+	<description>170</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">169.00000000000</SimpleData>
+		<SimpleData name="LAT">40.63774800000</SimpleData>
+		<SimpleData name="LON">-74.07601800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Victory Blvd @ Bay St</SimpleData>
+		<SimpleData name="LIVEID">155.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv171.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=155</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.076018,40.637748</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>171</name>
+	<description>171</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">170.00000000000</SimpleData>
+		<SimpleData name="LAT">40.63573500000</SimpleData>
+		<SimpleData name="LON">-74.08377700000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Victory Blvd @ Jersey St</SimpleData>
+		<SimpleData name="LIVEID">154.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=154</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.083777,40.635735</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>172</name>
+	<description>172</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">171.00000000000</SimpleData>
+		<SimpleData name="LAT">40.60876800000</SimpleData>
+		<SimpleData name="LON">-74.15361600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Victory Blvd WOF Campus Dr</SimpleData>
+		<SimpleData name="LIVEID">340.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv232.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=340</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.153616,40.608768</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>173</name>
+	<description>173</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">172.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71245900000</SimpleData>
+		<SimpleData name="LON">-73.96794300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">WBB Brooklyn Entrance</SimpleData>
+		<SimpleData name="LIVEID">204.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv43.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=204</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.967943,40.712459</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>174</name>
+	<description>174</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">173.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71532200000</SimpleData>
+		<SimpleData name="LON">-73.97635400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">WBB Manhattan Entrance</SimpleData>
+		<SimpleData name="LIVEID">209.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv48.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=209</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.976354,40.715322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>175</name>
+	<description>175</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">174.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71553300000</SimpleData>
+		<SimpleData name="LON">-74.00908100000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">West Broadway @ Chambers St</SimpleData>
+		<SimpleData name="LIVEID">337.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=337</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.009081,40.715533</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>176</name>
+	<description>176</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">175.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71770000000</SimpleData>
+		<SimpleData name="LON">-74.00736900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">West Broadway @ Worth St</SimpleData>
+		<SimpleData name="LIVEID">335.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv218.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=335</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.007369,40.7177</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>177</name>
+	<description>177</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">176.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74237800000</SimpleData>
+		<SimpleData name="LON">-74.00881000000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">West St @ 14 St</SimpleData>
+		<SimpleData name="LIVEID">296.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=296</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.00881,40.742378</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>178</name>
+	<description>178</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">177.00000000000</SimpleData>
+		<SimpleData name="LAT">40.74821900000</SimpleData>
+		<SimpleData name="LON">-74.00747900000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">West St @ 22 St</SimpleData>
+		<SimpleData name="LIVEID">295.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv192.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=295</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.007479,40.748219</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>179</name>
+	<description>179</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">178.00000000000</SimpleData>
+		<SimpleData name="LAT">40.75702400000</SimpleData>
+		<SimpleData name="LON">-74.00492500000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">West St @ 34 St</SimpleData>
+		<SimpleData name="LIVEID">220.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv59.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=220</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.004925,40.757024</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>180</name>
+	<description>180</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">179.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76202100000</SimpleData>
+		<SimpleData name="LON">-74.00116400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">West St @ 42 St</SimpleData>
+		<SimpleData name="LIVEID">293.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv190.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=293</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.001164,40.762021</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>181</name>
+	<description>181</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">180.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72579300000</SimpleData>
+		<SimpleData name="LON">-74.01091700000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">West St @ Canal St</SimpleData>
+		<SimpleData name="LIVEID">211.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv50.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=211</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.010917,40.725793</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>182</name>
+	<description>182</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">181.00000000000</SimpleData>
+		<SimpleData name="LAT">40.72983200000</SimpleData>
+		<SimpleData name="LON">-74.01065800000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">West St @ Clarkson</SimpleData>
+		<SimpleData name="LIVEID">292.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv189.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=292</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.010658,40.729832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>183</name>
+	<description>183</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">182.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71917200000</SimpleData>
+		<SimpleData name="LON">-74.01215600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">West St @ Harrison St</SimpleData>
+		<SimpleData name="LIVEID">333.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv205.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.012156,40.719172</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>184</name>
+	<description>184</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">183.00000000000</SimpleData>
+		<SimpleData name="LAT">40.76089200000</SimpleData>
+		<SimpleData name="LON">-74.00225300000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">West Street @ Intrepid</SimpleData>
+		<SimpleData name="LIVEID">319.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=319</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.002253,40.760892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>185</name>
+	<description>185</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">184.00000000000</SimpleData>
+		<SimpleData name="LAT">40.70229200000</SimpleData>
+		<SimpleData name="LON">-74.01289400000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">Whitehall St @ State St</SimpleData>
+		<SimpleData name="LIVEID">331.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=331</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.012894,40.702292</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>186</name>
+	<description>186</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">185.00000000000</SimpleData>
+		<SimpleData name="LAT">40.78682500000</SimpleData>
+		<SimpleData name="LON">-73.82434300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Whitestone @ 14 Ave</SimpleData>
+		<SimpleData name="LIVEID">324.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.248/cctv197.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=324</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.824343,40.786825</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>187</name>
+	<description>187</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">186.00000000000</SimpleData>
+		<SimpleData name="LAT">40.80683700000</SimpleData>
+		<SimpleData name="LON">-73.83281300000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Whitestone @ Bronx Bound</SimpleData>
+		<SimpleData name="LIVEID">302.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.203.8/2/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=302</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.832813,40.806837</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>188</name>
+	<description>188</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">187.00000000000</SimpleData>
+		<SimpleData name="LAT">40.79723300000</SimpleData>
+		<SimpleData name="LON">-73.82668000000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Whitestone @ Queens Bound</SimpleData>
+		<SimpleData name="LIVEID">303.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://webcam.mta.info/btimg/172.28.203.8/1/image.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=303</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.82668,40.797233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>189</name>
+	<description>189</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">188.00000000000</SimpleData>
+		<SimpleData name="LAT">40.78971300000</SimpleData>
+		<SimpleData name="LON">-73.82240200000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Whitestone Bridge</SimpleData>
+		<SimpleData name="LIVEID">144.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv121.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=144</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.822402,40.789713</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>190</name>
+	<description>190</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">189.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77270500000</SimpleData>
+		<SimpleData name="LON">-73.83042600000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Whitestone Nof Linden Pl</SimpleData>
+		<SimpleData name="LIVEID">286.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv183.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=286</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.830426,40.772705</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>191</name>
+	<description>191</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">190.00000000000</SimpleData>
+		<SimpleData name="LAT">40.71514700000</SimpleData>
+		<SimpleData name="LON">-74.00229400000</SimpleData>
+		<SimpleData name="ACTIVE">Y</SimpleData>
+		<SimpleData name="LOCATION">Worth St @ Centre St</SimpleData>
+		<SimpleData name="LIVEID">330.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">http://207.251.86.250/images/cams/govt_property/cctv217.jpg</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=330</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.002294,40.715147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>192</name>
+	<description>192</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">191.00000000000</SimpleData>
+		<SimpleData name="LAT">40.59009000000</SimpleData>
+		<SimpleData name="LON">-74.19343700000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">WSE @ Victory Blvd</SimpleData>
+		<SimpleData name="LIVEID">113.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=113</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.193437,40.59009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>193</name>
+	<description>193</description>
+	<ExtendedData><SchemaData schemaUrl="#NYCDOT_TrafficCameras">
+		<SimpleData name="ID">192.00000000000</SimpleData>
+		<SimpleData name="LAT">40.77914200000</SimpleData>
+		<SimpleData name="LON">-73.94476900000</SimpleData>
+		<SimpleData name="ACTIVE">N</SimpleData>
+		<SimpleData name="LOCATION">York Ave @ 91 ST</SimpleData>
+		<SimpleData name="LIVEID">322.00000000000</SimpleData>
+		<SimpleData name="URLIMAGE">img/inactive-camera.gif</SimpleData>
+		<SimpleData name="URLANIM">http://nyctmc.org/google_popup.php?cid=322</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.944769,40.779142</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

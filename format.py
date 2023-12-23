@@ -20,6 +20,7 @@ for placemark in placemark_elements:
     if location_element is not None:
         location_value = location_element.text
 
+        if placemark.find('.//kml:name[]')
         # Create a new <name> element
         name_element = ET.Element('name')
         name_element.text = location_value
