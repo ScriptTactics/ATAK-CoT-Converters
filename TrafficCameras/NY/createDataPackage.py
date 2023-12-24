@@ -232,7 +232,7 @@ def count_decimal_places(number):
 # content = get_regions("https://chart.maryland.gov/DataFeeds/GetCamerasJson")
 contents_info = []
 # Specify the path to the KML file
-kml_file_path = "NY/NYCDOT_TrafficCameras.kml"
+kml_file_path = "NYCDOT_TrafficCameras.kml"
 
 # Read the content of the KML file
 with open(kml_file_path, "r") as file:
