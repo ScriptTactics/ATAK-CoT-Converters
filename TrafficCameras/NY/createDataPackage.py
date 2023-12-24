@@ -47,7 +47,9 @@ def folder_setup(uid, root, extension):
     # Return to the root directory
     os.chdir(root_directory)
 
-
+def get_regions(request_url):
+    response = requests.get(request_url)
+    return json.loads(response.text)
 
 
 def create_point_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_klv, buffer_size, timeout, rtsp_reliable, region):
@@ -229,7 +231,7 @@ def count_decimal_places(number):
         # If there is no decimal point, there are zero decimal places
         return 0
 
-# content = get_regions("https://chart.maryland.gov/DataFeeds/GetCamerasJson")
+content = get_regions("https://webcams.nyctmc.org/api/cameras")
 contents_info = []
 # Specify the path to the KML file
 kml_file_path = "NYCDOT_TrafficCameras.kml"
@@ -286,12 +288,12 @@ for placemark in placemark_elements:
         remarks_text = ""
         
         region = ""
-        # for cam in content:
-        #     lat_number = count_decimal_places(float(cam['lat']))
-        #     lon_number = count_decimal_places(float(cam['lon']))
-        #     if round(float(lat_element.text),lat_number -1 ) == round(float(cam['lat']),lat_number -1) and round(float(lon_element.text),lon_number-1) == round(float(cam['lon']), lon_number -1):
-        #         (replace with region) = cam['cameraCategories'][0]
-        #         break
+        for cam in content:
+            lat_number = count_decimal_places(float(cam['latitude']))
+            lon_number = count_decimal_places(float(cam['longitude']))
+            if round(float(lat_element.text),lat_number -1 ) == round(float(cam['latitude']),lat_number -1) and round(float(lon_element.text),lon_number-1) == round(float(cam['longitude']), lon_number -1):
+                region = cam['area']
+                break
                 
         create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
                  color_info, video_info, connection_entry_info, remarks_text, region)        
