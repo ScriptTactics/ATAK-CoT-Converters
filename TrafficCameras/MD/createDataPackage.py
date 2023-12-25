@@ -232,7 +232,7 @@ def count_decimal_places(number):
 content = get_regions("https://chart.maryland.gov/DataFeeds/GetCamerasJson")
 contents_info = []
 # Specify the path to the KML file
-kml_file_path = "TrafficCameras/Md/MarylandTrafficCameras"
+kml_file_path = "TrafficCameras/MD/MarylandTrafficCameras.kml"
 
 # Read the content of the KML file
 with open(kml_file_path, "r") as file:
@@ -247,10 +247,10 @@ placemark_elements = sensor_root.findall('.//kml:Placemark', namespaces=namespac
 
     
 for placemark in placemark_elements:
-    url_element = placemark.find('.//kml:SimpleData[@name="URLIMAGE"]', namespaces=namespace)
-    location_element = placemark.find('.//kml:SimpleData[@name="LOCATION"]', namespaces=namespace)
-    lat_element = placemark.find('.//kml:SimpleData[@name="LAT"]', namespaces=namespace)
-    lon_element = placemark.find('.//kml:SimpleData[@name="LON"]', namespaces=namespace)
+    url_element = placemark.find('.//kml:SimpleData[@name="hlsurl"]', namespaces=namespace)
+    location_element = placemark.find('.//kml:SimpleData[@name="location"]', namespaces=namespace)
+    lat_element = placemark.find('.//kml:SimpleData[@name="Latitude"]', namespaces=namespace)
+    lon_element = placemark.find('.//kml:SimpleData[@name="Longitude"]', namespaces=namespace)
     if location_element is not None:
         location_value = location_element.text
         sensorUid = str(uuid.uuid4())
