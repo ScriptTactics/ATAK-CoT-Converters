@@ -216,43 +216,20 @@ def get_regions(request_url):
     response = requests.get(request_url)
     return json.loads(response.text)
 
-def count_decimal_places(number):
-    # Convert the float to a string
-    number_str = str(number)
-
-    # Check if the string contains a decimal point
-    if '.' in number_str:
-        # Get the substring after the decimal point and count its length
-        decimal_places = len(number_str.split('.')[1])
-        return decimal_places
-    else:
-        # If there is no decimal point, there are zero decimal places
-        return 0
 
 content = get_regions("https://chart.maryland.gov/DataFeeds/GetCamerasJson")
 contents_info = []
 # Specify the path to the KML file
 kml_file_path = "MarylandTrafficCameras.kml"
 
-# Read the content of the KML file
-with open(kml_file_path, "r") as file:
-    xml_string = file.read()
-
-# Parse the XML string
-sensor_root = ET.fromstring(xml_string)
-
-# Find all Placemark elements within the Folder
-namespace = {'kml': 'http://www.opengis.net/kml/2.2'}
-placemark_elements = sensor_root.findall('.//kml:Placemark', namespaces=namespace)
 
     
-for placemark in placemark_elements:
-    url_element = placemark.find('.//kml:SimpleData[@name="hlsurl"]', namespaces=namespace)
-    location_element = placemark.find('.//kml:SimpleData[@name="location"]', namespaces=namespace)
-    lat_element = placemark.find('.//kml:SimpleData[@name="Latitude"]', namespaces=namespace)
-    lon_element = placemark.find('.//kml:SimpleData[@name="Longitude"]', namespaces=namespace)
+for camera in content:
+    url_element = 'https://' + camera['cctvIp'] + '/rtplive/' + camera['id'] + '/playlist.m3u8'
+    location_element = camera['name']
+    lat_element = str(camera['lat'])
+    lon_element = str(camera['lon'])
     if location_element is not None:
-        location_value = location_element.text
         sensorUid = str(uuid.uuid4())
         videoUid = str(uuid.uuid4())
                 
@@ -260,7 +237,7 @@ for placemark in placemark_elements:
               "time": "2023-12-18T03:12:31.194Z", "start": "2023-12-18T03:12:31.194Z",
               "stale": "2024-12-17T03:12:31.194Z", "how": "h-g-i-g-o"}
 
-        point_info = {"lat": lat_element.text, "lon": lon_element.text, "hae": "105.112", "ce": "9999999.0", "le": "9999999.0"}
+        point_info = {"lat": lat_element, "lon": lon_element, "hae": "105.112", "ce": "9999999.0", "le": "9999999.0"}
 
         sensor_info = {"vfov": "45", "elevation": "0", "fovBlue": "1.0", "fovRed": "1.0", "strokeWeight": "0.0", "roll": "0",
                     "range_val": "100", "azimuth": "270", "rangeLineStrokeWeight": "0.0", "fov": "45", "hideFov": "true",
@@ -270,34 +247,29 @@ for placemark in placemark_elements:
         link_info = {"uid": "ANDROID-f18b0c86a8c70bcf", "production_time": "2023-12-18T03:08:49.272Z",
                     "link_type": "a-f-G-U-C", "parent_callsign": "ALPHA", "relation": "p-p"}
 
-        contact_info = {"callsign": location_value}
+        contact_info = {"callsign": location_element}
 
         color_info = {"argb": "-1"}
 
         video_info = {"uid": videoUid,
-                    "url": url_element.text}
+                    "url": url_element}
 
         connection_entry_info = {"networkTimeout": "12000", "uid": videoUid,
                                 "path": "", "protocol": "raw", "bufferTime": "-1",
-                                "address": url_element.text,
+                                "address": url_element,
                                 "port": "80", "roverPort": "-1", "rtspReliable": "0", "ignoreEmbeddedKLV": "false",
-                                "alias": location_value}
+                                "alias": location_element}
 
         remarks_text = ""
         
-        region = ""
-        for cam in content:
-            lat_number = count_decimal_places(float(cam['lat']))
-            lon_number = count_decimal_places(float(cam['lon']))
-            if round(float(lat_element.text),lat_number -1 ) == round(float(cam['lat']),lat_number -1) and round(float(lon_element.text),lon_number-1) == round(float(cam['lon']), lon_number -1):
-                region = cam['cameraCategories'][0]
-                break
+        region = camera['cameraCategories'][0]
+
                 
         create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
                  color_info, video_info, connection_entry_info, remarks_text, region)        
-        create_point_xml("raw", location_value, videoUid, url_element.text, 80, -1, "false", -1, 1200, 0, region)
-        sensor = {'uid': sensorUid, 'name': location_value, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
-        video =  {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
+        create_point_xml("raw", location_element, videoUid, url_element, 80, -1, "false", -1, 1200, 0, region)
+        sensor = {'uid': sensorUid, 'name': location_element, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
+        video =  {'uid': videoUid, 'name': location_element, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
         contents_info.append(sensor)
         contents_info.append(video)
 
