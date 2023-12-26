@@ -16,7 +16,7 @@ placemark_elements = root.findall('.//kml:Placemark', namespaces=namespace)
 
 # Extract and update the "location" field in each Placemark
 for placemark in placemark_elements:
-    location_element = placemark.find('.//kml:SimpleData[@name="location"]', namespaces=namespace)
+    location_element = placemark.find('.//kml:SimpleData[@name="CameraLocation"]', namespaces=namespace)
     if location_element is not None:
         location_value = location_element.text
 
@@ -27,7 +27,7 @@ for placemark in placemark_elements:
             # Create a new <name> element
             name_element = ET.Element('name')
             name_element.text = location_value
-            placemark.insert(name_element)
+            placemark.insert(0, name_element)
 
         # Insert the <name> element after <Placemark> and before <ExtendedData>
         print(f"Added <name>{location_value}</name> in one of the Placemarks.")
