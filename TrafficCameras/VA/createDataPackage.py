@@ -250,7 +250,7 @@ placemark_elements = sensor_root.findall('.//kml:Placemark', namespaces=namespac
 
     
 for placemark in placemark_elements:
-    url_element = sensor_root.find('.//kml:ExtendedData/kml:Data[@name="https_url"]/kml:value', namespaces=namespace)  
+    url_element = placemark.find('.//kml:ExtendedData/kml:Data[@name="https_url"]/kml:value', namespaces=namespace)  
     location_element = placemark.find('.//kml:description', namespaces=namespace)
     coordinates_element = placemark.find('.//kml:Point/kml:coordinates', namespaces=namespace)
     # Check if coordinates_element is not None before accessing its text
