@@ -256,8 +256,8 @@ for placemark in placemark_elements:
     # Check if coordinates_element is not None before accessing its text
     if coordinates_element is not None:
         coordinates_text = coordinates_element.text.split(',')
-        lat_element = coordinates_text[0]
-        lon_element = coordinates_text[1]
+        lat_element = coordinates_text[1]
+        lon_element = coordinates_text[0]
     else:
         print("Coordinates not found for this Placemark")
     if location_element is not None:
