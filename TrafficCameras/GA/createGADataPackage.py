@@ -48,7 +48,7 @@ def folder_setup(uid, root, extension):
     os.chdir(root_directory)
 
 
-def create_point_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_klv, buffer_size, timeout, rtsp_reliable):
+def create_point_xml(protocol, alias, uid, address, port, rover_port, ignore_embedded_klv, buffer_size, timeout, rtsp_reliable, region):
     # Create the root element
     root = ET.Element("feed")
 
@@ -236,19 +236,19 @@ geo_json_path = "GDOT_Live_Traffic_Cameras.geojson"
 cameras = map_to_json()
 
     
-for camera in cameras:
-    url_element = camera["properties"][15]
-    location_element = camera['properties'][8]
-    coordinates_element = camera['geometry'][1]
+for camera in cameras["features"]:
+    url_element = camera["properties"]["HLS"]
+    if(url_element == None): continue
+    location_element = camera['properties']["location_description"]
+    coordinates_element = camera['geometry']["coordinates"]
     # Check if coordinates_element is not None before accessing its text
     if coordinates_element is not None:
-        coordinates_text = coordinates_element.text.split(',')
-        lat_element = coordinates_text[1]
-        lon_element = coordinates_text[0]
+        lat_element = coordinates_element[1]
+        lon_element = coordinates_element[0]
     else:
         print("Coordinates not found for this Placemark")
     if location_element is not None:
-        location_value = location_element.text
+        location_value = location_element
         sensorUid = str(uuid.uuid4())
         videoUid = str(uuid.uuid4())
                 
@@ -256,7 +256,7 @@ for camera in cameras:
               "time": "2023-12-18T03:12:31.194Z", "start": "2023-12-18T03:12:31.194Z",
               "stale": "2024-12-17T03:12:31.194Z", "how": "h-g-i-g-o"}
 
-        point_info = {"lat": lat_element, "lon": lon_element, "hae": "105.112", "ce": "9999999.0", "le": "9999999.0"}
+        point_info = {"lat": str(lat_element), "lon": str(lon_element), "hae": "105.112", "ce": "9999999.0", "le": "9999999.0"}
 
         sensor_info = {"vfov": "45", "elevation": "0", "fovBlue": "1.0", "fovRed": "1.0", "strokeWeight": "0.0", "roll": "0",
                     "range_val": "100", "azimuth": "270", "rangeLineStrokeWeight": "0.0", "fov": "45", "hideFov": "true",
@@ -271,11 +271,11 @@ for camera in cameras:
         color_info = {"argb": "-1"}
 
         video_info = {"uid": videoUid,
-                    "url": url_element.text}
+                    "url": url_element}
 
         connection_entry_info = {"networkTimeout": "12000", "uid": videoUid,
                                 "path": "", "protocol": "raw", "bufferTime": "-1",
-                                "address": url_element.text,
+                                "address": url_element,
                                 "port": "80", "roverPort": "-1", "rtspReliable": "0", "ignoreEmbeddedKLV": "false",
                                 "alias": location_value}
 
@@ -285,7 +285,7 @@ for camera in cameras:
                
         create_event_xml(event_info, point_info, sensor_info, link_info, contact_info,
                  color_info, video_info, connection_entry_info, remarks_text, region)        
-        create_point_xml("raw", location_value, videoUid, url_element.text, 80, -1, "false", -1, 1200, 0, region)
+        create_point_xml("raw", location_value, videoUid, url_element, 80, -1, "false", -1, 1200, 0, region)
         sensor = {'uid': sensorUid, 'name': location_value, 'zipEntry': f'{sensorUid}/{sensorUid}.cot'}
         video =  {'uid': videoUid, 'name': location_value, 'zipEntry': f'{videoUid}/{videoUid}.xml', 'contentType': 'Video'}
         contents_info.append(sensor)
